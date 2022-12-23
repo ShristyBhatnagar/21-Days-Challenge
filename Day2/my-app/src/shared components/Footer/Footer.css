@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+}
+
+.foot{
+    background-color: rgb(145, 145, 223);
+    position:absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+}

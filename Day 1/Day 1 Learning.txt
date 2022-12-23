@@ -1,0 +1,5 @@
+1-Installed GIT
+2-Created account on GIT
+3-Pushed code using GIT Commands
+4-Pulled Code 
+5-React Intro-Think in React
