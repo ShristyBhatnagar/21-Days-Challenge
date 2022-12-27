@@ -1,0 +1,67 @@
+.MiddleDiv{
+    
+    Width: 800px;
+    background-color:white;
+    margin: 250px;
+    border-radius: 5px;
+    position: absolute;
+    top:-150px;
+    left: -25px;
+    height: 150px;
+    box-shadow: 0 0 2px 2px rgb(198, 197, 197);
+   /* padding: 20px; */
+   display: flex;
+   flex-direction:row;
+    
+    
+}
+.MiddleDiv{
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.iconx{
+   
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-evenly;
+   
+   
+   
+}
+.iconsz { display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+.icopost{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.postbar{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 50%;
+   
+}
+
+.MainPage{
+    box-shadow: 0 0 2px 2px rgb(198, 197, 197);
+    border-radius: 5px;
+    background-color:white;
+    width: 60%;
+    top:80px;
+    display: flex;
+    flex-direction: column;
+   
+    margin-left: 240px;
+    height: 300px;
+   
+}

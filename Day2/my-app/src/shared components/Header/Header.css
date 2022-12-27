@@ -1,16 +1,72 @@
 *{
     margin: 0;
+    
+   
 }
-
-
-.Header{
-    width: 100%;
-    background-color: rgb(145, 145, 223);
-    padding: 20px;
+.ico{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: -20px;
     
 }
-/* .Component{
+
+ 
+.Header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:white;
+    padding: 20px;
+    height: 30px;
+   
+
+   
+     
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ /* .span1{
     background-color: rgb(145, 145, 223);
     font-weight: bolder;  
+    margin: 400px;
+
+}  */
+.Rside{
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    right: 0px;
+    z-index: 1;
+    background-color: white;
     
+}
+.LSide{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between ;
+    z-index: 1;
+}
+/* .Logo{ */
+    /* position: relative; */
+/*    
 } */
+.search{
+    /* position: absolute; */
+    left:100px
+    
+}
+.typesearch{
+    height: 30px;
+    width:200px
+    
+}
