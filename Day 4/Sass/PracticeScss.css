@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: yellow;
+  font-size: 70px;
+}
+
+#colored {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  background-color: yellow;
+  font-size: 70px;
+}
+
+.bodydiv {
+  display: flex;
+  border: 2px dotted black;
+  background-color: yellow;
+  height: 200px;
+}
+.bodydiv h5 {
+  font-size: 30px;
+}
+.bodydiv h2 {
+  color: red;
+  font-size: 70px;
+  font-family: fantasy;
+}
+
+@media screen and (max-width: 900px) {
+  .bodydiv h2 {
+    font-size: 30px;
+  }
+}
+
+header {
+  background-color: aqua;
+}
+header a {
+  background-color: yellow;
+  text-decoration: none;
+}
+header a:hover {
+  background-color: brown;
+}
+header button {
+  font-size: 30px;
+}/*# sourceMappingURL=PracticeScss.css.map */

@@ -49,19 +49,20 @@ align-items: center;
     flex-direction: column;
     border-radius: 5px;
     width: 50%;
+    position: relative;
    
 }
 
 .MainPage{
+    position: absolute;
+    top: 300px;
+    left: 250px;
     box-shadow: 0 0 2px 2px rgb(198, 197, 197);
     border-radius: 5px;
     background-color:white;
     width: 60%;
-    top:80px;
-    display: flex;
+     display: flex;
     flex-direction: column;
-   
-    margin-left: 240px;
     height: 300px;
    
 }
