@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <>
+    
     
       <div className='Header'>
         <div className='LSide'>
@@ -31,20 +31,21 @@ const Header = () => {
           
              <div className='ico'>
             
-              <MdHome size={30}/>Home
+              <MdHome size={30}/><Link to ='/'><h4>Home </h4></Link>
+
               
               </div>
           
           
              <div className='ico'>
-              <TbFriends size={30} />My network
+              <TbFriends size={30} /><Link to ='/mynetwork'><h4>My Network</h4></Link>
               </div>
              
           
          
              <div className='ico'>
              
-              <GiSuitcase size={30} /><Link to ='/Jobs'><div><h4>Jobs</h4></div></Link>
+              <GiSuitcase size={30} /><Link to ='/Jobs'><h4>Jobs</h4></Link>
               
               </div>
           
@@ -68,10 +69,12 @@ const Header = () => {
               </div>
           
           <div className='ico'>
-            <VscPlay size={30} />Learning</div></div>
+            <VscPlay size={30} />Learning</div>
+            
+            
             </div>
         
-    </>
+    </div>
 
 
   )
