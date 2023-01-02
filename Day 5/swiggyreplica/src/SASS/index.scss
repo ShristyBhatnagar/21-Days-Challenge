@@ -1,0 +1,201 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+
+
+$font1:larger;
+$marginleft:50%;
+$darkcolor:#2B1E16;
+
+// *{
+//     margin: 0;
+// }
+.leftelem{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%; 
+    
+  
+  
+}
+
+  .login{
+  
+    
+    justify-content: space-evenly;
+    font-size: $font1;
+    margin:20px    
+    
+    
+
+}
+  .signup{
+  
+    font-size: $font1;
+    color: white;
+    background-color: black;
+    margin-left: 40px;
+    height: 40px;
+   
+
+}
+
+
+.intro{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    margin-top: -100px;
+  
+}
+
+
+.Part2div{
+    color: white;
+    background-color: $darkcolor;
+    width: 100%;
+    height: 400px;
+    
+    
+    }
+
+    .block{
+       align-items:inherit;
+        padding: 30px;
+        width: 300px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+}
+.Part3Container{
+    display: flex;
+    flex-direction: column;
+}
+.Part3content1{
+    font-weight: bolder;
+   font-family:sans-serif;
+   width: 250px;
+   margin: 30px;
+   
+   
+}
+.Part3content2{
+    font-family:sans-serif;
+   width: 350px;
+   margin: 20px;
+   color: gray;
+}
+.Part3div{
+    display: flex;
+    flex-direction: row;
+    margin-top: -240px;
+    margin-left: 400px;
+    
+ }
+
+ .icons{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+ .Part4div{
+    background-color: black;
+    height: 700px;
+    width: 100%;
+     color: white;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     padding: 20px;
+     justify-content: space-evenly;
+     .listed{
+       justify-content: center;
+     }
+     .icons2{
+        position: absolute;
+        right: 50px;
+         margin-top: -300px;
+     }
+     li{
+        padding: 10px;
+     }
+ }
+
+
+.Part5div{
+    background-color: $darkcolor;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    height: 1000px;
+    
+    width: 100%;
+    color: white;
+}
+.subdiv{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+    padding-right: 20px;
+}
+
+   
+.Loco{
+ height: 50px;
+width: 30%;
+border: 2px solid orange;
+margin-left: 20px;
+
+}
+.ico{
+    
+     margin-left: -50px;
+      margin-top: 10px;
+      z-index: 1;
+}
+
+.FindButton{
+
+    color: white;
+    background-color: orange;
+    height: 50px;
+    width: 150px;
+    border: none;
+    font-weight: bolder;
+    // margin-top: -100px;
+}
+.Part1div{
+    height: 400px;
+}
+.LocationBar{
+margin-top: 100px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+
+   
+}
+
+.PopularCity{
+    // display: flex;
+    // flex-direction: column;
+    padding: 20px;
+    color: grey;
+    height: 150px;
+    width: 50%;
+}
+.people{
+    padding: 20px;
+    
+}
+.popcity{
+        
+    color: black;
+    font-weight: bolder;
+
+}
