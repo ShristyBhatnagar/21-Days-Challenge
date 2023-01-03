@@ -6,13 +6,13 @@ const Part3 = () => {
   return (
     <>
     <div className='Part3Container'>
-    <div className='Part3content1'>
+    <div className='Part3Container__Part3content1'>
     <h1>Restaurants in your pocket</h1>
     </div>
-    <div className='Part3content2'>
+    <div className='Part3Container__Part3content2'>
     <h4>Order from your favorite restaurants & track on the go, with the all-new Swiggy app.</h4>
     </div>
-    <div className='icons'>
+    <div className='Part3Container__icons'>
     <img width={150} height={50} src='https://e7.pngegg.com/pngimages/384/968/png-clipart-google-play-app-store-android-mobile-app-android-text-logo.png' alt='play'></img>
     <img width={150} height={50} src='https://w7.pngwing.com/pngs/34/523/png-transparent-app-store-apple-logo-apple-text-logo-video-game.png'></img>
     

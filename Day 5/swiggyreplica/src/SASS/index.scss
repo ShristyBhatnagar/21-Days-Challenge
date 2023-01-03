@@ -22,7 +22,7 @@ $darkcolor:#2B1E16;
   
 }
 
-  .login{
+  .leftelem__login{
   
     
     justify-content: space-evenly;
@@ -32,7 +32,7 @@ $darkcolor:#2B1E16;
     
 
 }
-  .signup{
+  .leftelem__signup{
   
     font-size: $font1;
     color: white;
@@ -42,7 +42,9 @@ $darkcolor:#2B1E16;
    
 
 }
-
+.Part1div{
+    height: 390px;
+}
 
 .intro{
     position: absolute;
@@ -51,6 +53,33 @@ $darkcolor:#2B1E16;
     margin-top: -100px;
   
 }
+.Part1div__FindButton{
+
+    color: white;
+    background-color: orange;
+    height: 50px;
+    width: 150px;
+    border: none;
+    font-weight: bolder;
+    // margin-top: -100px;
+}
+
+.Part1div__LocationBar{
+margin-top: 100px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+
+   
+}
+   
+.Part1div__Loco{
+    height: 50px;
+   width: 30%;
+   border: 2px solid orange;
+   margin-left: 20px;
+   
+   }
 
 
 .Part2div{
@@ -62,7 +91,7 @@ $darkcolor:#2B1E16;
     
     }
 
-    .block{
+    .Part2div__block{
        align-items:inherit;
         padding: 30px;
         width: 300px;
@@ -74,7 +103,7 @@ $darkcolor:#2B1E16;
     display: flex;
     flex-direction: column;
 }
-.Part3content1{
+.Part3Container__Part3content1{
     font-weight: bolder;
    font-family:sans-serif;
    width: 250px;
@@ -82,7 +111,7 @@ $darkcolor:#2B1E16;
    
    
 }
-.Part3content2{
+.Part3Container__Part3content2{
     font-family:sans-serif;
    width: 350px;
    margin: 20px;
@@ -96,15 +125,12 @@ $darkcolor:#2B1E16;
     
  }
 
- .icons{
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-}
+ 
+
 
  .Part4div{
     background-color: black;
-    height: 700px;
+    height: 500px;
     width: 100%;
      color: white;
      display: flex;
@@ -112,10 +138,10 @@ $darkcolor:#2B1E16;
      flex-wrap: wrap;
      padding: 20px;
      justify-content: space-evenly;
-     .listed{
+     .Part4div__listed{
        justify-content: center;
      }
-     .icons2{
+     .Part4div__icons2{
         position: absolute;
         right: 50px;
          margin-top: -300px;
@@ -123,35 +149,42 @@ $darkcolor:#2B1E16;
      li{
         padding: 10px;
      }
+     .Part4div__icons{
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+     }
  }
 
 
 .Part5div{
-    background-color: $darkcolor;
+    background-color: black;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     
-    height: 1000px;
+    height: 8000px;
     
     width: 100%;
     color: white;
 }
-.subdiv{
+.Foot{
+    border-top: 2px solid silver ;
+    background-color: black;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Part2div__subdiv{
    display: flex;
    flex-direction: row;
    justify-content: center;
     padding-right: 20px;
 }
 
-   
-.Loco{
- height: 50px;
-width: 30%;
-border: 2px solid orange;
-margin-left: 20px;
 
-}
 .ico{
     
      margin-left: -50px;
@@ -159,27 +192,7 @@ margin-left: 20px;
       z-index: 1;
 }
 
-.FindButton{
 
-    color: white;
-    background-color: orange;
-    height: 50px;
-    width: 150px;
-    border: none;
-    font-weight: bolder;
-    // margin-top: -100px;
-}
-.Part1div{
-    height: 400px;
-}
-.LocationBar{
-margin-top: 100px;
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-
-   
-}
 
 .PopularCity{
     // display: flex;

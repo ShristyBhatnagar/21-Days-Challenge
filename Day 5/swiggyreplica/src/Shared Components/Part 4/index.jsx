@@ -6,7 +6,7 @@ function Part4() {
     <div className='Part4div'>
       
         
-        <div className='listed' >
+        <div className='Part4div__listed' >
         
          <ul >
          <h4>COMPANY</h4> 
@@ -39,7 +39,7 @@ function Part4() {
           </li>
           </ul>
           </div>
-          <div className='listed'>
+          <div className='Part4div__listed'>
             <h4>CONTACT</h4> 
             <ul>
               <li><a href='#'>Help & Support</a></li>
@@ -48,7 +48,7 @@ function Part4() {
               
            </ul>
            </div>
-           <div className='listed'>
+           <div className='Part4div__listed'>
            <h4>LEGAL</h4> 
            <ul>
               <li><a href='#'>Terms & Conditions</a></li>
@@ -60,7 +60,7 @@ function Part4() {
               <li><a href='#'>Corporate – Swiggy Money Codes Terms and Conditions</a></li> 
               <li><a href='#'>Corporate - Swiggy Discount Voucher Terms and Conditions</a></li>
            </ul>
-           <div className='icons2'>
+           <div className='Part4div__icons2'>
     <img width={150} height={100} src='logostore.png' alt='play'></img>
    
     

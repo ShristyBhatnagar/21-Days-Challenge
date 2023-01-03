@@ -1,4 +1,4 @@
-import axios from "axios";
+
 // import React, {useEffect, useState } from 'react';
 import '../../SASS/index.css';
 import {data} from '../../CityData/Cities'
@@ -20,7 +20,7 @@ function Locations() {
     // },[])
     
   return (
-   <> {data?.map((x)=>(<div className='people'>{x.City}</div>))}</>
+   <> {data?.map((x,i)=>(<div key={i} className='people'><a href='#'>{x.City}</a></div>))}</>
   )
 }
 

@@ -5,18 +5,22 @@
   width: 50%;
 }
 
-.login {
+.leftelem__login {
   justify-content: space-evenly;
   font-size: larger;
   margin: 20px;
 }
 
-.signup {
+.leftelem__signup {
   font-size: larger;
   color: white;
   background-color: black;
   margin-left: 40px;
   height: 40px;
+}
+
+.Part1div {
+  height: 390px;
 }
 
 .intro {
@@ -26,6 +30,29 @@
   margin-top: -100px;
 }
 
+.Part1div__FindButton {
+  color: white;
+  background-color: orange;
+  height: 50px;
+  width: 150px;
+  border: none;
+  font-weight: bolder;
+}
+
+.Part1div__LocationBar {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.Part1div__Loco {
+  height: 50px;
+  width: 30%;
+  border: 2px solid orange;
+  margin-left: 20px;
+}
+
 .Part2div {
   color: white;
   background-color: #2B1E16;
@@ -33,7 +60,7 @@
   height: 400px;
 }
 
-.block {
+.Part2div__block {
   align-items: inherit;
   padding: 30px;
   width: 300px;
@@ -47,14 +74,14 @@
   flex-direction: column;
 }
 
-.Part3content1 {
+.Part3Container__Part3content1 {
   font-weight: bolder;
   font-family: sans-serif;
   width: 250px;
   margin: 30px;
 }
 
-.Part3content2 {
+.Part3Container__Part3content2 {
   font-family: sans-serif;
   width: 350px;
   margin: 20px;
@@ -68,15 +95,9 @@
   margin-left: 400px;
 }
 
-.icons {
-  display: flex;
-  flex-direction: row;
-  margin: 10px;
-}
-
 .Part4div {
   background-color: black;
-  height: 700px;
+  height: 500px;
   width: 100%;
   color: white;
   display: flex;
@@ -85,10 +106,10 @@
   padding: 20px;
   justify-content: space-evenly;
 }
-.Part4div .listed {
+.Part4div .Part4div__listed {
   justify-content: center;
 }
-.Part4div .icons2 {
+.Part4div .Part4div__icons2 {
   position: absolute;
   right: 50px;
   margin-top: -300px;
@@ -96,55 +117,43 @@
 .Part4div li {
   padding: 10px;
 }
+.Part4div .Part4div__icons {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
 
 .Part5div {
-  background-color: #2B1E16;
+  background-color: black;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 1000px;
+  height: 8000px;
   width: 100%;
   color: white;
 }
 
-.subdiv {
+.Foot {
+  border-top: 2px solid silver;
+  background-color: black;
+  height: 100px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Part2div__subdiv {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-right: 20px;
 }
 
-.Loco {
-  height: 50px;
-  width: 30%;
-  border: 2px solid orange;
-  margin-left: 20px;
-}
-
 .ico {
   margin-left: -50px;
   margin-top: 10px;
   z-index: 1;
-}
-
-.FindButton {
-  color: white;
-  background-color: orange;
-  height: 50px;
-  width: 150px;
-  border: none;
-  font-weight: bolder;
-}
-
-.Part1div {
-  height: 400px;
-}
-
-.LocationBar {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }
 
 .PopularCity {

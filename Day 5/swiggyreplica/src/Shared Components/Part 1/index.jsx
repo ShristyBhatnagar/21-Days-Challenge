@@ -1,36 +1,53 @@
 import React from 'react'
 import '../../SASS/index.css'
 import { TbFocus2 } from "react-icons/tb";
+import Anime from './login';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 // import'./App.css'
 
-const Login = () => {
+
+const Loginpg = () => {
   return (
     <>
    
     <div className='leftelem'>
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Swiggy_logo.svg/1280px-Swiggy_logo.svg.png" alt="logo" width="200" height="80"/>
-   
-    <div className='login'>Login<button className='signup'>Sign Up</button></div> 
+    {/* <BrowserRouter>
+    <Routes>
+      <Route> */}
+    <div className='leftelem__login'>Login
+     
+    <button className='leftelem__signup'>Sign Up</button>
+    
     </div>
-    <img className='intro'  src='Lunch.jpg' alt='img'/>
-    <div className='Part1div'>
-    <div className='LocationBar' >
-  
-    <input className='Loco' type='text' placeholder='Enter your delivery location '></input>
-   
-    <div className='ico'>
-    <TbFocus2/>
+    {/* </Route>
+    </Routes>
+    </BrowserRouter>  */}
+    
     </div>
     
+    <Anime/>
+    <img className='intro'  src='Lunch.jpg' alt='img'/>
+    <div className='Part1div'>
+      
+    
+    <div className='Part1div__LocationBar' >
+    
+    <input className='Part1div__Loco' type='text' placeholder='Enter your delivery location '></input>
+   
+    <div className='Part1div__ico'>
+    <TbFocus2/>
+    </div>
+   
 
-    <button className='FindButton'>Find Food </button>
+    <button className='Part1div__FindButton'>Find Food </button>
     </div>
     
     
     <div className='PopularCity'>
     <h4 >Popular Cities in India</h4>
 
-    <a className='popcity'>Ahmedabad</a> <a className='popcity'>Bangalore</a> <a className='popcity'>Chennai</a> <a className='popcity'>Delhi</a> <a className='popcity'>Gurgaon</a> <a className='popcity'>Hyderabad</a> <a className='popcity'>Kolkata</a> <a className='popcity'>Mumbai</a> <a className='popcity'>Pune& more.</a>
+    <a href='#' className='popcity'>Ahmedabad</a> <a href='#' className='popcity'>Bangalore</a> <a  href='#' className='popcity'>Chennai</a> <a href='#' className='popcity'>Delhi</a> <a href='#' className='popcity'>Gurgaon</a> <a href='#' className='popcity'>Hyderabad</a> <a href='#' className='popcity'>Kolkata</a> <a href='#' className='popcity'>Mumbai</a> <a href='#' className='popcity'>Pune& more.</a>
     </div>
     </div>
     
@@ -42,4 +59,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Loginpg
