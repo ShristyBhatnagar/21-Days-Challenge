@@ -4,13 +4,11 @@
   justify-content: space-between;
   width: 50%;
 }
-
 .leftelem__login {
   justify-content: space-evenly;
   font-size: larger;
   margin: 20px;
 }
-
 .leftelem__signup {
   font-size: larger;
   color: white;
@@ -22,14 +20,6 @@
 .Part1div {
   height: 390px;
 }
-
-.intro {
-  position: absolute;
-  right: 0;
-  width: 50%;
-  margin-top: -100px;
-}
-
 .Part1div__FindButton {
   color: white;
   background-color: orange;
@@ -38,19 +28,24 @@
   border: none;
   font-weight: bolder;
 }
-
 .Part1div__LocationBar {
   margin-top: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-
 .Part1div__Loco {
   height: 50px;
   width: 30%;
   border: 2px solid orange;
   margin-left: 20px;
+}
+
+.intro {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  margin-top: -100px;
 }
 
 .Part2div {
@@ -59,7 +54,6 @@
   width: 100%;
   height: 400px;
 }
-
 .Part2div__block {
   align-items: inherit;
   padding: 30px;
@@ -73,19 +67,27 @@
   display: flex;
   flex-direction: column;
 }
-
 .Part3Container__Part3content1 {
   font-weight: bolder;
   font-family: sans-serif;
   width: 250px;
-  margin: 30px;
+  margin: 35px;
 }
-
 .Part3Container__Part3content2 {
   font-family: sans-serif;
   width: 350px;
-  margin: 20px;
   color: gray;
+}
+.Part3Container__icons {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.Part3Container__subdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 20px;
 }
 
 .Part3div {
@@ -106,10 +108,10 @@
   padding: 20px;
   justify-content: space-evenly;
 }
-.Part4div .Part4div__listed {
+.Part4div__listed {
   justify-content: center;
 }
-.Part4div .Part4div__icons2 {
+.Part4div__icons2 {
   position: absolute;
   right: 50px;
   margin-top: -300px;
@@ -117,7 +119,7 @@
 .Part4div li {
   padding: 10px;
 }
-.Part4div .Part4div__icons {
+.Part4div__icons {
   display: flex;
   flex-direction: row;
   margin: 10px;
@@ -143,13 +145,6 @@
   justify-content: space-between;
 }
 
-.Part2div__subdiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-right: 20px;
-}
-
 .ico {
   margin-left: -50px;
   margin-top: 10px;
@@ -169,5 +164,20 @@
 
 .popcity {
   color: black;
+  font-weight: bolder;
+}
+
+.popup {
+  z-index: 9999;
+  background-color: white;
+  height: 100%;
+  width: 40%;
+}
+.popup button {
+  color: white;
+  background-color: orange;
+  height: 50px;
+  width: 150px;
+  border: none;
   font-weight: bolder;
 }/*# sourceMappingURL=index.css.map */

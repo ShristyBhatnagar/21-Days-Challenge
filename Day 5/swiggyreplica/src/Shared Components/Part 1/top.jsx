@@ -2,7 +2,7 @@ import React from 'react'
 import '../../SASS/index.css'
 import { TbFocus2 } from "react-icons/tb";
 import Anime from './login';
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import {BrowserRouter,Routes,Route, Link} from 'react-router-dom'
 // import'./App.css'
 
 
@@ -12,17 +12,17 @@ const Loginpg = () => {
    
     <div className='leftelem'>
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Swiggy_logo.svg/1280px-Swiggy_logo.svg.png" alt="logo" width="200" height="80"/>
-    {/* <BrowserRouter>
-    <Routes>
-      <Route> */}
-    <div className='leftelem__login'>Login
-     
+    
+    <div className='leftelem__login'>
+   
+    <Link to="/login">Login</Link>
+    
+ 
+    
     <button className='leftelem__signup'>Sign Up</button>
     
     </div>
-    {/* </Route>
-    </Routes>
-    </BrowserRouter>  */}
+      
     
     </div>
     

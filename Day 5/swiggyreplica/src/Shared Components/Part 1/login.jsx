@@ -8,16 +8,49 @@ import { useState, useEffect } from "react";
 // import ReactDOM from "react-dom/client";
 
 function Timer() {
+  const [data1,setData1] = useState(0);
+
   
-  const [data,setData] = useState(0);
+  const timerMain=()=>{
+    let counter=0;
+
+     const interval=setInterval(() => {
+      
+    if (counter > data.length) {
+      clearInterval(interval);
+    } 
+      else
+      {      
+      setData1(data1+1);
+      counter++; // local variable that this closure will see
+    }
+    
+  }, 200);
+ 
+}
+
 
   useEffect(() => {
-    setTimeout(() => {
-      setData((data) => data + 1);
-    }, 1000);
-  });
+   let m= setInterval(()=>timerMain(),1000);
+   
+ 
+//  return clearInterval(m);
+      
+  },[])
 
-  return <h1>I've rendered {data} times!</h1>;
+   
+  
+
+  return(
+    <div>
+    
+   
+      <ul><li key={data[data1].id}>{data[data1].text} </li>
+    
+      </ul>
+  
+  </div>
+  )
 }
 
 

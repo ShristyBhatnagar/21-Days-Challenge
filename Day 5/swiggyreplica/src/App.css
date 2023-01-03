@@ -1,4 +1,4 @@
-@tailwind base;
+ @tailwind base;
 @layer base {
     h1 {
       @apply text-2xl;
@@ -14,5 +14,5 @@
     }
   }
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
 

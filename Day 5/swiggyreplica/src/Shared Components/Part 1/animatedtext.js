@@ -1,16 +1,16 @@
 export const data=[
     {
-      
+      id:1,
        text: "Game night?",
        
     },
     {
-      
+      id:2,
         text: "Late night at office?",
         
      },
      {
-      
+      id:3,
         text: "Movie Marathon?",
         
      }]
