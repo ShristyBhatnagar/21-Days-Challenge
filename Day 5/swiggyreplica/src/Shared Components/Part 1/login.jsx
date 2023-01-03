@@ -25,7 +25,7 @@ function Timer() {
       counter++; // local variable that this closure will see
     }
     
-  }, 200);
+  }, 300);
  
 }
 

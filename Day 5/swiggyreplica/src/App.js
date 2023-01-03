@@ -7,7 +7,6 @@ import Part4 from './Shared Components/Part 4'
 import Part5 from './Shared Components/Part 5';
 // import { BrowserRouter,Routes, Route} from 'react-router-dom';
 import Footer from './Shared Components/Footer';
-import test from './Shared Components/Part 1/test';
 import Timer from './Shared Components/Part 1/login';
 import { BrowserRouter,Route, Routes } from 'react-router-dom';
 import Loginpop from './Shared Components/Login';
@@ -27,8 +26,9 @@ function App() {
         <Footer/>
         <Routes>
    
-        
+        <Route path='/' element={<Loginpop/>}/>
    <Route path='/login' element={<Loginpop/>}/>
+   
  </Routes>
         </BrowserRouter>
     </div>
