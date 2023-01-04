@@ -45,7 +45,7 @@ const Loginpg = () => {
     
     
     <div className='PopularCity'>
-    <h4 >Popular Cities in India</h4>
+    <h4 className='font-mono' >Popular Cities in India</h4>
 
     <a href='#' className='popcity'>Ahmedabad</a> <a href='#' className='popcity'>Bangalore</a> <a  href='#' className='popcity'>Chennai</a> <a href='#' className='popcity'>Delhi</a> <a href='#' className='popcity'>Gurgaon</a> <a href='#' className='popcity'>Hyderabad</a> <a href='#' className='popcity'>Kolkata</a> <a href='#' className='popcity'>Mumbai</a> <a href='#' className='popcity'>Pune& more.</a>
     </div>
