@@ -31,10 +31,10 @@ function Timer() {
 
 
   useEffect(() => {
-   let m= setInterval(()=>timerMain(),1000);
+   let m= setInterval(()=>timerMain(),2000);
    
  
-//  return clearInterval(m);
+  return clearInterval(m);
       
   },[])
 
@@ -45,9 +45,9 @@ function Timer() {
     <div>
     
    
-      <ul><li key={data[data1].id}>{data[data1].text} </li>
+      <h1 className='text-lg' key={data[data1].id}>{data[data1].text} </h1>
     
-      </ul>
+      
   
   </div>
   )

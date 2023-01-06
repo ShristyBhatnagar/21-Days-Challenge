@@ -1,14 +1,18 @@
 import Account from './Pages';
 import './App.css';
 import Timer from './Pages/effect';
-import Parent from './Pages/usecontext/Parent';
+import Usestate from './Pages/Theme/themechange';
+
+
 
 function App() {
   return (
     <div className="App">
       <Account/>
       <Timer/>
-      <Parent/>
+      <Usestate/>
+      
+      
    
     </div>
   );

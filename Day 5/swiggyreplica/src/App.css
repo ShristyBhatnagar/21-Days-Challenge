@@ -1,4 +1,11 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
+.light{
+    background-color: white;
+}
+
+.dark{
+    background-color: black;
+}

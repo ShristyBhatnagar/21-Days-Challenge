@@ -8,16 +8,26 @@ import Part5 from './Shared Components/Part 5';
 // import { BrowserRouter,Routes, Route} from 'react-router-dom';
 import Footer from './Shared Components/Footer';
 import Timer from './Shared Components/Part 1/login';
-import { BrowserRouter,Route, Routes } from 'react-router-dom';
+import {BrowserRouter, Route, Routes } from 'react-router-dom';
 import Loginpop from './Shared Components/Login';
+import { createContext, useEffect, useState } from 'react';
+import ReactSwitch from 'react-js-switch'
 
 
 function App() {
+  const themeChanger=createContext({});
+  const [theme,setTheme]=useState('light');
+  const toggleTheme=()=>{
+    setTheme((theme)=>(theme==='light'?'dark':'light'));
+  }
+  useEffect(()=>{document.body.className=theme})
   return (
     <div className="App">
-      
+      <themeChanger.Provider>
       <BrowserRouter>
+      <ReactSwitch onChange={toggleTheme} checked={theme==='dark'} checkedIcon={false}/>Change Theme
         <Loginpg/>
+        
         <Timer/>
         <Part2/>
         <Part3/>
@@ -30,7 +40,9 @@ function App() {
    <Route path='/login' element={<Loginpop/>}/>
    
  </Routes>
-        </BrowserRouter>
+ </BrowserRouter>
+ </themeChanger.Provider>
+       
     </div>
   );
 }

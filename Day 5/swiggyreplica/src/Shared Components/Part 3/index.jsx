@@ -7,7 +7,7 @@ const Part3 = () => {
     <>
     <div className='Part3Container'>
     <div className='Part3Container__Part3content1'>
-    <h1>Restaurants in your pocket</h1>
+    <h1 className='text-3xl'>Restaurants in your pocket</h1>
     </div>
     <div className='Part3Container__Part3content2'>
     <h4>Order from your favorite restaurants & track on the go, with the all-new Swiggy app.</h4>
