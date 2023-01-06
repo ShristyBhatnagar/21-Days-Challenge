@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://localhost:3000/top -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js.download"></script><style>*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  
+}
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFBQSx3QkFBYztJQUFkLHdCQUFjO0lBQWQsbUJBQWM7SUFBZCxtQkFBYztJQUFkLGNBQWM7SUFBZCxjQUFjO0lBQWQsY0FBYztJQUFkLGVBQWM7SUFBZCxlQUFjO0lBQWQsYUFBYztJQUFkLGFBQWM7SUFBZCxrQkFBYztJQUFkLHNDQUFjO0lBQWQsZUFBYztJQUFkLG9CQUFjO0lBQWQsc0JBQWM7SUFBZCx1QkFBYztJQUFkLHdCQUFjO0lBQWQsa0JBQWM7SUFBZCwyQkFBYztJQUFkLDRCQUFjO0lBQWQsc0NBQWM7SUFBZCxrQ0FBYztJQUFkLDJCQUFjO0lBQWQsc0JBQWM7SUFBZCw4QkFBYztJQUFkLFlBQWM7SUFBZCxrQkFBYztJQUFkLGdCQUFjO0lBQWQsaUJBQWM7SUFBZCxrQkFBYztJQUFkLGNBQWM7SUFBZCxnQkFBYztJQUFkLGFBQWM7SUFBZCxtQkFBYztJQUFkLHFCQUFjO0lBQWQsMkJBQWM7SUFBZCx5QkFBYztJQUFkLDBCQUFjO0lBQWQsMkJBQWM7SUFBZCx1QkFBYztJQUFkLHdCQUFjO0lBQWQseUJBQWM7SUFBZDtBQUFjO0FBQWQ7SUFBQSx3QkFBYztJQUFkLHdCQUFjO0lBQWQsbUJBQWM7SUFBZCxtQkFBYztJQUFkLGNBQWM7SUFBZCxjQUFjO0lBQWQsY0FBYztJQUFkLGVBQWM7SUFBZCxlQUFjO0lBQWQsYUFBYztJQUFkLGFBQWM7SUFBZCxrQkFBYztJQUFkLHNDQUFjO0lBQWQsZUFBYztJQUFkLG9CQUFjO0lBQWQsc0JBQWM7SUFBZCx1QkFBYztJQUFkLHdCQUFjO0lBQWQsa0JBQWM7SUFBZCwyQkFBYztJQUFkLDRCQUFjO0lBQWQsc0NBQWM7SUFBZCxrQ0FBYztJQUFkLDJCQUFjO0lBQWQsc0JBQWM7SUFBZCw4QkFBYztJQUFkLFlBQWM7SUFBZCxrQkFBYztJQUFkLGdCQUFjO0lBQWQsaUJBQWM7SUFBZCxrQkFBYztJQUFkLGNBQWM7SUFBZCxnQkFBYztJQUFkLGFBQWM7SUFBZCxtQkFBYztJQUFkLHFCQUFjO0lBQWQsMkJBQWM7SUFBZCx5QkFBYztJQUFkLDBCQUFjO0lBQWQsMkJBQWM7SUFBZCx1QkFBYztJQUFkLHdCQUFjO0lBQWQseUJBQWM7SUFBZDtBQUFjIiwic291cmNlc0NvbnRlbnQiOlsiQHRhaWx3aW5kIGJhc2U7XHJcbkB0YWlsd2luZCBjb21wb25lbnRzO1xyXG5AdGFpbHdpbmQgdXRpbGl0aWVzOyJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* .light{
+    background-color: white;
+}
+
+.dark{
+    background-color: black;
+} */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztzQkFFc0I7O0FBRXRCOzs7Ozs7R0FNRyIsInNvdXJjZXNDb250ZW50IjpbIi8qIEB0YWlsd2luZCBiYXNlO1xuQHRhaWx3aW5kIGNvbXBvbmVudHM7XG5AdGFpbHdpbmQgdXRpbGl0aWVzOyAqL1xuXG4vKiAubGlnaHR7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59XG5cbi5kYXJre1xuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufSAqLyJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.leftelem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+.leftelem__login {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  color: #000;
+  letter-spacing: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 40px;
+  width: auto;
+  padding: 0 5rem;
+}
+.leftelem__signup {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 0 2rem;
+  letter-spacing: 0;
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  width: auto;
+  margin: 2rem;
+}
+
+.Part1div__FindButton {
+  color: #fff;
+  background-color: #fc8019;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  height: 60px;
+  line-height: 60px;
+  width: 140px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.53px;
+}
+.Part1div__LocationBar {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 0 !important;
+  padding-left: 15px !important;
+  padding-right: 160px !important;
+  caret-color: #fc8019;
+  font-size: 18px !important;
+  font-weight: 500;
+  height: 100px;
+}
+.Part1div__Loco {
+  box-shadow: grey;
+  box-sizing: border-box;
+  border-radius: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 40%;
+  border-color: grey;
+  height: 60px;
+}
+.Part1div .ico {
+  margin-left: -100px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.Part1div .icospan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  line-height: 60px;
+}
+
+.intro {
+  right: 0;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  height: 95%;
+}
+
+.Part2div {
+  color: white;
+  background-color: #2b1e16;
+  width: 100%;
+  height: 400px;
+}
+.Part2div__block {
+  padding: 30px;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.Part2div__subdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.Part3Container {
+  display: flex;
+  flex-direction: column;
+}
+.Part3Container__Part3content1 {
+  font-weight: bolder;
+  font-family: sans-serif;
+  width: 250px;
+  margin: 35px;
+}
+.Part3Container__Part3content2 {
+  font-family: sans-serif;
+  width: 350px;
+  color: gray;
+}
+.Part3Container__icons {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.Part3div {
+  display: flex;
+  flex-direction: row;
+  margin-top: -360px;
+  margin-left: 400px;
+}
+
+.Part4div {
+  background-color: black;
+  height: 500px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-evenly;
+  border-bottom: 2px solid #fff;
+}
+.Part4div__listed {
+  justify-content: center;
+}
+.Part4div__icons2 {
+  position: absolute;
+  right: 50px;
+  margin-top: -300px;
+}
+.Part4div li {
+  padding: 10px;
+}
+.Part4div__icons {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.Part5div {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 8000px;
+  width: 100%;
+  color: white;
+}
+
+.Foot {
+  border-top: 2px solid silver;
+  background-color: black;
+  height: 100px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.PopularCity {
+  padding: 20px;
+  color: grey;
+  width: 50%;
+}
+
+.people {
+  padding: 10px;
+}
+
+.popcity {
+  color: black;
+  font-weight: bolder;
+}
+
+.popscreen {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  justify-content: space-around;
+}
+.popscreen__overlay {
+  height: 100%;
+  width: 60%;
+  background-color: grey;
+  opacity: 0.7;
+  overflow: hidden;
+  z-index: 10000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.popscreen__popup {
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 60px;
+  background-color: white;
+}
+.popscreen__Loco {
+  height: 50px;
+  width: 80%;
+  border: 2px solid orange;
+  padding: 20px;
+}
+.popscreen button {
+  color: white;
+  background-color: orange;
+  height: 50px;
+  width: 150px;
+  border: none;
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.light {
+  background-color: white;
+}
+
+.dark {
+  background-color: grey;
+}
+
+.h3tag {
+  font-size: 20px;
+  color: grey;
+}
+
+.h1tag {
+  margin-top: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+}
+
+.footerimg {
+  height: 50px;
+  width: 100px;
+  margin: 30px;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 20px;
+}
+
+.themechanger {
+  display: flex;
+  flex-direction: row;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9TQVNTL2luZGV4LnNjc3MiLCJ3ZWJwYWNrOi8vLi9zcmMvU0FTUy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBVUE7RUFDSSxhQUpNO0VBS04sbUJBQUE7RUFDQSw4QkFBQTtFQUNBLFVBQUE7QUNUSjtBRFdJO0VBQ0kscUJBQUE7RUFDQSxlQUFBO0VBQ0EscUJBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxpQkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsV0FBQTtFQUNBLGVBQUE7QUNUUjtBRFlJO0VBQ0ksZUFBQTtFQUNBLHFCQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxXQUFBO0VBQ0Esc0JBQUE7RUFDQSwyQ0FBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0FDVlI7O0FEZUk7RUFDSSxXQUFBO0VBQ0EseUJBQUE7RUFDQSwyQ0FBQTtFQUVBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxzQkFBQTtBQ2JSO0FEZUk7RUFDSSxpQkFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLGlCQUFBO0VBQ0EseUJBQUE7RUFDQSw2QkFBQTtFQUNBLCtCQUFBO0VBQ0Esb0JBQUE7RUFDQSwwQkFBQTtFQUNBLGdCQUFBO0VBQ0EsYUFBQTtBQ2JSO0FEZUk7RUFDSSxnQkFBQTtFQUNBLHNCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBO0VBQ0EsdUJBQUE7RUFDQSxVQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0FDYlI7QURlSTtFQUVHLG1CQUFBO0VBQ0EsZ0JBQUE7RUFDQyxlQUFBO0FDZFI7QURpQkk7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSw2QkFBQTtFQUNBLGlCQUFBO0FDZlI7O0FEbUJBO0VBRUksUUFBQTtFQUNBLFVBQUE7RUFDQSxrQkFBQTtFQUNBLE1BQUE7RUFDQSxXQUFBO0FDaEJKOztBRG1CQTtFQUNJLFlBQUE7RUFDQSx5QkF6R1E7RUEwR1IsV0FBQTtFQUNBLGFBQUE7QUNoQko7QURrQkk7RUFDSSxhQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7QUNoQlI7QURrQkk7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0FDaEJSOztBRG9CQTtFQUNJLGFBNUhNO0VBNkhOLHNCQUFBO0FDakJKO0FEbUJJO0VBQ0ksbUJBQUE7RUFDQSx1QkFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0FDakJSO0FEbUJJO0VBQ0ksdUJBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtBQ2pCUjtBRG9CSTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtFQUNBLGFBQUE7QUNsQlI7O0FEc0JBO0VBQ0ksYUFBQTtFQUNBLG1CQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtBQ25CSjs7QURzQkE7RUFDSSx1QkFBQTtFQUNBLGFBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxhQUFBO0VBQ0EsNkJBQUE7RUFDQSw2QkFBQTtBQ25CSjtBRHFCSTtFQUNJLHVCQUFBO0FDbkJSO0FEcUJJO0VBQ0ksa0JBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7QUNuQlI7QURxQkk7RUFDSSxhQUFBO0FDbkJSO0FEcUJJO0VBQ0ksYUFBQTtFQUNBLG1CQUFBO0VBQ0EsWUFBQTtBQ25CUjs7QUR1QkE7RUFDSSx1QkFBQTtFQUNBLGFBQUE7RUFDQSxzQkFBQTtFQUNBLGVBQUE7RUFFQSxjQUFBO0VBRUEsV0FBQTtFQUNBLFlBQUE7QUN0Qko7O0FEd0JBO0VBQ0ksNEJBQUE7RUFDQSx1QkFBQTtFQUNBLGFBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsOEJBQUE7QUNyQko7O0FEd0JBO0VBR0ksYUFBQTtFQUNBLFdBQUE7RUFFQSxVQUFBO0FDeEJKOztBRDBCQTtFQUNJLGFBQUE7QUN2Qko7O0FEeUJBO0VBQ0ksWUFBQTtFQUNBLG1CQUFBO0FDdEJKOztBRHlCQTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtFQUNBLGFBQUE7RUFDQSw2QkFBQTtBQ3RCSjtBRHdCSTtFQUNJLFlBQUE7RUFDQSxVQUFBO0VBQ0Esc0JBQUE7RUFDQSxZQUFBO0VBQ0EsZ0JBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxNQUFBO0VBQ0EsT0FBQTtBQ3RCUjtBRHdCSTtFQUNJLFlBQUE7RUFDQSxVQUFBO0VBQ0Esa0JBQUE7RUFDQSxNQUFBO0VBQ0EsUUFBQTtFQUNBLGFBQUE7RUFDQSx1QkFBQTtBQ3RCUjtBRHdCSTtFQUNJLFlBQUE7RUFDQSxVQUFBO0VBQ0Esd0JBQUE7RUFDQSxhQUFBO0FDdEJSO0FEeUJJO0VBQ0ksWUFBQTtFQUNBLHdCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0FDdkJSOztBRDBCQTtFQUNJLHVCQUFBO0FDdkJKOztBRHlCQTtFQUNJLHNCQUFBO0FDdEJKOztBRHlCQTtFQUNJLGVBQUE7RUFDQSxXQUFBO0FDdEJKOztBRHlCQTtFQUNJLGdCQUFBO0VBQ0EseUNBQUE7RUFDQSxlQUFBO0FDdEJKOztBRHdCQTtFQUNJLFlBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtBQ3JCSjs7QUR3QkE7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSw2QkFBQTtFQUNBLGFBQUE7RUFDQSxZQUFBO0FDckJKOztBRHVCQTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtFQUNBLDREQUFBO0FDcEJKIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQHRhaWx3aW5kIGJhc2U7XHJcbi8vIEB0YWlsd2luZCBjb21wb25lbnRzO1xyXG4vLyBAdGFpbHdpbmQgdXRpbGl0aWVzO1xyXG5cclxuJGZvbnQxOiBsYXJnZXI7XHJcbiRtYXJnaW5sZWZ0OiA1MCU7XHJcbiRkYXJrY29sb3I6ICMyYjFlMTY7XHJcbiRkaXNwbGF5OiBmbGV4O1xyXG5cclxuLy9naXZlbiBwcm9wZXJ0aWVzIHRvIGxlZnQgZWxlbWVudHNcclxuLmxlZnRlbGVtIHtcclxuICAgIGRpc3BsYXk6ICRkaXNwbGF5O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuICAgIHdpZHRoOiA1MCU7XHJcblxyXG4gICAgJl9fbG9naW4ge1xyXG4gICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBjb2xvcjogIzAwMDtcclxuICAgICAgICBsZXR0ZXItc3BhY2luZzogMDtcclxuICAgICAgICBmb250LXNpemU6IDE2cHg7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IDYwMDtcclxuICAgICAgICBsaW5lLWhlaWdodDogNDBweDtcclxuICAgICAgICB3aWR0aDogYXV0bztcclxuICAgICAgICBwYWRkaW5nOiAwIDVyZW07XHJcbiAgICB9XHJcblxyXG4gICAgJl9fc2lnbnVwIHtcclxuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBwYWRkaW5nOiAwIDJyZW07XHJcbiAgICAgICAgbGV0dGVyLXNwYWNpbmc6IDA7XHJcbiAgICAgICAgY29sb3I6ICNmZmY7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcclxuICAgICAgICBib3gtc2hhZG93OiAwIDFweCAzcHggMCByZ2IoMCAwIDAgLyAxMiUpO1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcclxuICAgICAgICBmb250LXdlaWdodDogNjAwO1xyXG4gICAgICAgIGhlaWdodDogNDBweDtcclxuICAgICAgICBsaW5lLWhlaWdodDogNDBweDtcclxuICAgICAgICB3aWR0aDogYXV0bztcclxuICAgICAgICBtYXJnaW46IDJyZW07XHJcbiAgICB9XHJcbn1cclxuXHJcbi5QYXJ0MWRpdiB7XHJcbiAgICAmX19GaW5kQnV0dG9uIHtcclxuICAgICAgICBjb2xvcjogI2ZmZjtcclxuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmM4MDE5O1xyXG4gICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYigwIDAgMCAvIDEyJSk7XHJcbiAgICAgICAgLy8gcmlnaHQ6IDA7XHJcbiAgICAgICAgaGVpZ2h0OiA2MHB4O1xyXG4gICAgICAgIGxpbmUtaGVpZ2h0OiA2MHB4O1xyXG4gICAgICAgIHdpZHRoOiAxNDBweDtcclxuICAgICAgICBmb250LXNpemU6IDE2cHg7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IDcwMDtcclxuICAgICAgICBsZXR0ZXItc3BhY2luZzogMC41M3B4O1xyXG4gICAgfVxyXG4gICAgJl9fTG9jYXRpb25CYXIge1xyXG4gICAgICAgIG1hcmdpbi10b3A6IDEwMHB4O1xyXG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAgICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgICAgICBmbGV4LXdyYXA6IG5vd3JhcDtcclxuICAgICAgICBwYWRkaW5nLXRvcDogMCAhaW1wb3J0YW50O1xyXG4gICAgICAgIHBhZGRpbmctbGVmdDogMTVweCAhaW1wb3J0YW50O1xyXG4gICAgICAgIHBhZGRpbmctcmlnaHQ6IDE2MHB4ICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgY2FyZXQtY29sb3I6ICNmYzgwMTk7XHJcbiAgICAgICAgZm9udC1zaXplOiAxOHB4ICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IDUwMDtcclxuICAgICAgICBoZWlnaHQ6IDEwMHB4O1xyXG4gICAgfVxyXG4gICAgJl9fTG9jbyB7XHJcbiAgICAgICAgYm94LXNoYWRvdzogZ3JleTtcclxuICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDA7XHJcbiAgICAgICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gICAgICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xyXG4gICAgICAgIHdpZHRoOiA0MCU7XHJcbiAgICAgICAgYm9yZGVyLWNvbG9yOiBncmV5O1xyXG4gICAgICAgIGhlaWdodDogNjBweDtcclxuICAgIH1cclxuICAgIC5pY28ge1xyXG4gICAgXHJcbiAgICAgICBtYXJnaW4tbGVmdDogLTEwMHB4O1xyXG4gICAgICAgbWFyZ2luLXRvcDogMjBweDtcclxuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgXHJcbiAgICB9XHJcbiAgICAuaWNvc3BhbntcclxuICAgICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XHJcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XHJcbiAgICAgICAgbGluZS1oZWlnaHQ6IDYwcHg7XHJcbiAgICB9XHJcbn1cclxuXHJcbi5pbnRybyB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICByaWdodDogMDtcclxuICAgIHdpZHRoOiA1MCU7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDA7XHJcbiAgICBoZWlnaHQ6IDk1JTtcclxufVxyXG5cclxuLlBhcnQyZGl2IHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICRkYXJrY29sb3I7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogNDAwcHg7XHJcblxyXG4gICAgJl9fYmxvY2sge1xyXG4gICAgICAgIHBhZGRpbmc6IDMwcHg7XHJcbiAgICAgICAgd2lkdGg6IDMwMHB4O1xyXG4gICAgICAgIGhlaWdodDogMjUwcHg7XHJcbiAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgfVxyXG4gICAgJl9fc3ViZGl2IHtcclxuICAgICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XHJcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICAgICAgcGFkZGluZy1yaWdodDogMjBweDtcclxuICAgIH1cclxufVxyXG5cclxuLlBhcnQzQ29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6ICRkaXNwbGF5O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuXHJcbiAgICAmX19QYXJ0M2NvbnRlbnQxIHtcclxuICAgICAgICBmb250LXdlaWdodDogYm9sZGVyO1xyXG4gICAgICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xyXG4gICAgICAgIHdpZHRoOiAyNTBweDtcclxuICAgICAgICBtYXJnaW46IDM1cHg7XHJcbiAgICB9XHJcbiAgICAmX19QYXJ0M2NvbnRlbnQyIHtcclxuICAgICAgICBmb250LWZhbWlseTogc2Fucy1zZXJpZjtcclxuICAgICAgICB3aWR0aDogMzUwcHg7XHJcbiAgICAgICAgY29sb3I6IGdyYXk7XHJcbiAgICB9XHJcblxyXG4gICAgJl9faWNvbnMge1xyXG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAgICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgICAgICBwYWRkaW5nOiAyMHB4O1xyXG4gICAgfVxyXG59XHJcblxyXG4uUGFydDNkaXYge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XHJcbiAgICBtYXJnaW4tdG9wOiAtMzYwcHg7XHJcbiAgICBtYXJnaW4tbGVmdDogNDAwcHg7XHJcbn1cclxuXHJcbi5QYXJ0NGRpdiB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICAgIGhlaWdodDogNTAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gICAgZmxleC13cmFwOiB3cmFwO1xyXG4gICAgcGFkZGluZzogMjBweDtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkICNmZmY7XHJcblxyXG4gICAgJl9fbGlzdGVkIHtcclxuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIH1cclxuICAgICZfX2ljb25zMiB7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIHJpZ2h0OiA1MHB4O1xyXG4gICAgICAgIG1hcmdpbi10b3A6IC0zMDBweDtcclxuICAgIH1cclxuICAgIGxpIHtcclxuICAgICAgICBwYWRkaW5nOiAxMHB4O1xyXG4gICAgfVxyXG4gICAgJl9faWNvbnMge1xyXG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAgICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgICAgICBtYXJnaW46IDEwcHg7XHJcbiAgICB9XHJcbn1cclxuXHJcbi5QYXJ0NWRpdiB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgZmxleC13cmFwOiB3cmFwO1xyXG5cclxuICAgIGhlaWdodDogODAwMHB4O1xyXG5cclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG59XHJcbi5Gb290IHtcclxuICAgIGJvcmRlci10b3A6IDJweCBzb2xpZCBzaWx2ZXI7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICAgIGhlaWdodDogMTAwcHg7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxufVxyXG5cclxuLlBvcHVsYXJDaXR5IHtcclxuICAgIC8vIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAvLyBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgcGFkZGluZzogMjBweDtcclxuICAgIGNvbG9yOiBncmV5O1xyXG4gICAgLy8gaGVpZ2h0OiAxNTBweDtcclxuICAgIHdpZHRoOiA1MCU7XHJcbn1cclxuLnBlb3BsZSB7XHJcbiAgICBwYWRkaW5nOiAxMHB4O1xyXG59XHJcbi5wb3BjaXR5IHtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkZXI7XHJcbn1cclxuXHJcbi5wb3BzY3JlZW4ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XHJcbiAgICBwYWRkaW5nOiAzMHB4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XHJcblxyXG4gICAgJl9fb3ZlcmxheSB7XHJcbiAgICAgICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgICAgIHdpZHRoOiA2MCU7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcclxuICAgICAgICBvcGFjaXR5OiAwLjc7XHJcbiAgICAgICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICAgICAgICB6LWluZGV4OiAxMDAwMDtcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgdG9wOiAwO1xyXG4gICAgICAgIGxlZnQ6IDA7XHJcbiAgICB9XHJcbiAgICAmX19wb3B1cCB7XHJcbiAgICAgICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgICAgIHdpZHRoOiA0MCU7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIHRvcDogMDtcclxuICAgICAgICByaWdodDogMDtcclxuICAgICAgICBwYWRkaW5nOiA2MHB4O1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgfVxyXG4gICAgJl9fTG9jbyB7XHJcbiAgICAgICAgaGVpZ2h0OiA1MHB4O1xyXG4gICAgICAgIHdpZHRoOiA4MCU7XHJcbiAgICAgICAgYm9yZGVyOiAycHggc29saWQgb3JhbmdlO1xyXG4gICAgICAgIHBhZGRpbmc6IDIwcHg7XHJcbiAgICB9XHJcblxyXG4gICAgYnV0dG9uIHtcclxuICAgICAgICBjb2xvcjogd2hpdGU7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogb3JhbmdlO1xyXG4gICAgICAgIGhlaWdodDogNTBweDtcclxuICAgICAgICB3aWR0aDogMTUwcHg7XHJcbiAgICAgICAgYm9yZGVyOiBub25lO1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkZXI7XHJcbiAgICAgICAgbWFyZ2luOiAxMHB4O1xyXG4gICAgfVxyXG59XHJcbi5saWdodCB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxufVxyXG4uZGFyayB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xyXG59XHJcblxyXG4uaDN0YWcge1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgY29sb3I6IGdyZXk7XHJcbn1cclxuXHJcbi5oMXRhZyB7XHJcbiAgICBtYXJnaW4tdG9wOiA0NXB4O1xyXG4gICAgZm9udC1mYW1pbHk6IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7XHJcbiAgICBmb250LXNpemU6IDM2cHg7XHJcbn1cclxuLmZvb3RlcmltZyB7XHJcbiAgICBoZWlnaHQ6IDUwcHg7XHJcbiAgICB3aWR0aDogMTAwcHg7XHJcbiAgICBtYXJnaW46IDMwcHg7XHJcbn1cclxuXHJcbi5zb2NpYWxtZWRpYSB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xyXG4gICAgcGFkZGluZzogMTBweDtcclxuICAgIG1hcmdpbjogMjBweDtcclxufVxyXG4udGhlbWVjaGFuZ2VyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gICAgZm9udC1mYW1pbHk6IFwiU2Vnb2UgVUlcIiwgVGFob21hLCBHZW5ldmEsIFZlcmRhbmEsIHNhbnMtc2VyaWY7XHJcbn1cclxuIiwiLmxlZnRlbGVtIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICB3aWR0aDogNTAlO1xufVxuLmxlZnRlbGVtX19sb2dpbiB7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6ICMwMDA7XG4gIGxldHRlci1zcGFjaW5nOiAwO1xuICBmb250LXNpemU6IDE2cHg7XG4gIGZvbnQtd2VpZ2h0OiA2MDA7XG4gIGxpbmUtaGVpZ2h0OiA0MHB4O1xuICB3aWR0aDogYXV0bztcbiAgcGFkZGluZzogMCA1cmVtO1xufVxuLmxlZnRlbGVtX19zaWdudXAge1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBwYWRkaW5nOiAwIDJyZW07XG4gIGxldHRlci1zcGFjaW5nOiAwO1xuICBjb2xvcjogI2ZmZjtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcbiAgYm94LXNoYWRvdzogMCAxcHggM3B4IDAgcmdiYSgwLCAwLCAwLCAwLjEyKTtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBmb250LXdlaWdodDogNjAwO1xuICBoZWlnaHQ6IDQwcHg7XG4gIGxpbmUtaGVpZ2h0OiA0MHB4O1xuICB3aWR0aDogYXV0bztcbiAgbWFyZ2luOiAycmVtO1xufVxuXG4uUGFydDFkaXZfX0ZpbmRCdXR0b24ge1xuICBjb2xvcjogI2ZmZjtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZjODAxOTtcbiAgYm94LXNoYWRvdzogMCAxcHggM3B4IDAgcmdiYSgwLCAwLCAwLCAwLjEyKTtcbiAgaGVpZ2h0OiA2MHB4O1xuICBsaW5lLWhlaWdodDogNjBweDtcbiAgd2lkdGg6IDE0MHB4O1xuICBmb250LXNpemU6IDE2cHg7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGxldHRlci1zcGFjaW5nOiAwLjUzcHg7XG59XG4uUGFydDFkaXZfX0xvY2F0aW9uQmFyIHtcbiAgbWFyZ2luLXRvcDogMTAwcHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGZsZXgtd3JhcDogbm93cmFwO1xuICBwYWRkaW5nLXRvcDogMCAhaW1wb3J0YW50O1xuICBwYWRkaW5nLWxlZnQ6IDE1cHggIWltcG9ydGFudDtcbiAgcGFkZGluZy1yaWdodDogMTYwcHggIWltcG9ydGFudDtcbiAgY2FyZXQtY29sb3I6ICNmYzgwMTk7XG4gIGZvbnQtc2l6ZTogMThweCAhaW1wb3J0YW50O1xuICBmb250LXdlaWdodDogNTAwO1xuICBoZWlnaHQ6IDEwMHB4O1xufVxuLlBhcnQxZGl2X19Mb2NvIHtcbiAgYm94LXNoYWRvdzogZ3JleTtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgYm9yZGVyLXJhZGl1czogMDtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gIHdpZHRoOiA0MCU7XG4gIGJvcmRlci1jb2xvcjogZ3JleTtcbiAgaGVpZ2h0OiA2MHB4O1xufVxuLlBhcnQxZGl2IC5pY28ge1xuICBtYXJnaW4tbGVmdDogLTEwMHB4O1xuICBtYXJnaW4tdG9wOiAyMHB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4uUGFydDFkaXYgLmljb3NwYW4ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgbGluZS1oZWlnaHQ6IDYwcHg7XG59XG5cbi5pbnRybyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IDA7XG4gIHdpZHRoOiA1MCU7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBoZWlnaHQ6IDk1JTtcbn1cblxuLlBhcnQyZGl2IHtcbiAgY29sb3I6IHdoaXRlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMmIxZTE2O1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA0MDBweDtcbn1cbi5QYXJ0MmRpdl9fYmxvY2sge1xuICBwYWRkaW5nOiAzMHB4O1xuICB3aWR0aDogMzAwcHg7XG4gIGhlaWdodDogMjUwcHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4uUGFydDJkaXZfX3N1YmRpdiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBwYWRkaW5nLXJpZ2h0OiAyMHB4O1xufVxuXG4uUGFydDNDb250YWluZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufVxuLlBhcnQzQ29udGFpbmVyX19QYXJ0M2NvbnRlbnQxIHtcbiAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcbiAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG4gIHdpZHRoOiAyNTBweDtcbiAgbWFyZ2luOiAzNXB4O1xufVxuLlBhcnQzQ29udGFpbmVyX19QYXJ0M2NvbnRlbnQyIHtcbiAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG4gIHdpZHRoOiAzNTBweDtcbiAgY29sb3I6IGdyYXk7XG59XG4uUGFydDNDb250YWluZXJfX2ljb25zIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgcGFkZGluZzogMjBweDtcbn1cblxuLlBhcnQzZGl2IHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgbWFyZ2luLXRvcDogLTM2MHB4O1xuICBtYXJnaW4tbGVmdDogNDAwcHg7XG59XG5cbi5QYXJ0NGRpdiB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICBoZWlnaHQ6IDUwMHB4O1xuICB3aWR0aDogMTAwJTtcbiAgY29sb3I6IHdoaXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBmbGV4LXdyYXA6IHdyYXA7XG4gIHBhZGRpbmc6IDIwcHg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICBib3JkZXItYm90dG9tOiAycHggc29saWQgI2ZmZjtcbn1cbi5QYXJ0NGRpdl9fbGlzdGVkIHtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG4uUGFydDRkaXZfX2ljb25zMiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IDUwcHg7XG4gIG1hcmdpbi10b3A6IC0zMDBweDtcbn1cbi5QYXJ0NGRpdiBsaSB7XG4gIHBhZGRpbmc6IDEwcHg7XG59XG4uUGFydDRkaXZfX2ljb25zIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgbWFyZ2luOiAxMHB4O1xufVxuXG4uUGFydDVkaXYge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgZmxleC13cmFwOiB3cmFwO1xuICBoZWlnaHQ6IDgwMDBweDtcbiAgd2lkdGg6IDEwMCU7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLkZvb3Qge1xuICBib3JkZXItdG9wOiAycHggc29saWQgc2lsdmVyO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgaGVpZ2h0OiAxMDBweDtcbiAgY29sb3I6IHdoaXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG59XG5cbi5Qb3B1bGFyQ2l0eSB7XG4gIHBhZGRpbmc6IDIwcHg7XG4gIGNvbG9yOiBncmV5O1xuICB3aWR0aDogNTAlO1xufVxuXG4ucGVvcGxlIHtcbiAgcGFkZGluZzogMTBweDtcbn1cblxuLnBvcGNpdHkge1xuICBjb2xvcjogYmxhY2s7XG4gIGZvbnQtd2VpZ2h0OiBib2xkZXI7XG59XG5cbi5wb3BzY3JlZW4ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBwYWRkaW5nOiAzMHB4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbn1cbi5wb3BzY3JlZW5fX292ZXJsYXkge1xuICBoZWlnaHQ6IDEwMCU7XG4gIHdpZHRoOiA2MCU7XG4gIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gIG9wYWNpdHk6IDAuNztcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgei1pbmRleDogMTAwMDA7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xufVxuLnBvcHNjcmVlbl9fcG9wdXAge1xuICBoZWlnaHQ6IDEwMCU7XG4gIHdpZHRoOiA0MCU7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICByaWdodDogMDtcbiAgcGFkZGluZzogNjBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59XG4ucG9wc2NyZWVuX19Mb2NvIHtcbiAgaGVpZ2h0OiA1MHB4O1xuICB3aWR0aDogODAlO1xuICBib3JkZXI6IDJweCBzb2xpZCBvcmFuZ2U7XG4gIHBhZGRpbmc6IDIwcHg7XG59XG4ucG9wc2NyZWVuIGJ1dHRvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogb3JhbmdlO1xuICBoZWlnaHQ6IDUwcHg7XG4gIHdpZHRoOiAxNTBweDtcbiAgYm9yZGVyOiBub25lO1xuICBmb250LXdlaWdodDogYm9sZGVyO1xuICBtYXJnaW46IDEwcHg7XG59XG5cbi5saWdodCB7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufVxuXG4uZGFyayB7XG4gIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG59XG5cbi5oM3RhZyB7XG4gIGZvbnQtc2l6ZTogMjBweDtcbiAgY29sb3I6IGdyZXk7XG59XG5cbi5oMXRhZyB7XG4gIG1hcmdpbi10b3A6IDQ1cHg7XG4gIGZvbnQtZmFtaWx5OiBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmO1xuICBmb250LXNpemU6IDM2cHg7XG59XG5cbi5mb290ZXJpbWcge1xuICBoZWlnaHQ6IDUwcHg7XG4gIHdpZHRoOiAxMDBweDtcbiAgbWFyZ2luOiAzMHB4O1xufVxuXG4uc29jaWFsbWVkaWEge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgcGFkZGluZzogMTBweDtcbiAgbWFyZ2luOiAyMHB4O1xufVxuXG4udGhlbWVjaGFuZ2VyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgZm9udC1mYW1pbHk6IFwiU2Vnb2UgVUlcIiwgVGFob21hLCBHZW5ldmEsIFZlcmRhbmEsIHNhbnMtc2VyaWY7XG59LyojIHNvdXJjZU1hcHBpbmdVUkw9aW5kZXguY3NzLm1hcCAqLyJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+
+/*
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9vdXRwdXQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQUEsd0JBQWM7RUFBZCx3QkFBYztFQUFkLG1CQUFjO0VBQWQsbUJBQWM7RUFBZCxjQUFjO0VBQWQsY0FBYztFQUFkLGNBQWM7RUFBZCxlQUFjO0VBQWQsZUFBYztFQUFkLGFBQWM7RUFBZCxhQUFjO0VBQWQsa0JBQWM7RUFBZCxzQ0FBYztFQUFkLGVBQWM7RUFBZCxvQkFBYztFQUFkLHNCQUFjO0VBQWQsdUJBQWM7RUFBZCx3QkFBYztFQUFkLGtCQUFjO0VBQWQsMkJBQWM7RUFBZCw0QkFBYztFQUFkLHNDQUFjO0VBQWQsa0NBQWM7RUFBZCwyQkFBYztFQUFkLHNCQUFjO0VBQWQsOEJBQWM7RUFBZCxZQUFjO0VBQWQsa0JBQWM7RUFBZCxnQkFBYztFQUFkLGlCQUFjO0VBQWQsa0JBQWM7RUFBZCxjQUFjO0VBQWQsZ0JBQWM7RUFBZCxhQUFjO0VBQWQsbUJBQWM7RUFBZCxxQkFBYztFQUFkLDJCQUFjO0VBQWQseUJBQWM7RUFBZCwwQkFBYztFQUFkLDJCQUFjO0VBQWQsdUJBQWM7RUFBZCx3QkFBYztFQUFkLHlCQUFjO0VBQWQ7QUFBYzs7QUFBZDtFQUFBLHdCQUFjO0VBQWQsd0JBQWM7RUFBZCxtQkFBYztFQUFkLG1CQUFjO0VBQWQsY0FBYztFQUFkLGNBQWM7RUFBZCxjQUFjO0VBQWQsZUFBYztFQUFkLGVBQWM7RUFBZCxhQUFjO0VBQWQsYUFBYztFQUFkLGtCQUFjO0VBQWQsc0NBQWM7RUFBZCxlQUFjO0VBQWQsb0JBQWM7RUFBZCxzQkFBYztFQUFkLHVCQUFjO0VBQWQsd0JBQWM7RUFBZCxrQkFBYztFQUFkLDJCQUFjO0VBQWQsNEJBQWM7RUFBZCxzQ0FBYztFQUFkLGtDQUFjO0VBQWQsMkJBQWM7RUFBZCxzQkFBYztFQUFkLDhCQUFjO0VBQWQsWUFBYztFQUFkLGtCQUFjO0VBQWQsZ0JBQWM7RUFBZCxpQkFBYztFQUFkLGtCQUFjO0VBQWQsY0FBYztFQUFkLGdCQUFjO0VBQWQsYUFBYztFQUFkLG1CQUFjO0VBQWQscUJBQWM7RUFBZCwyQkFBYztFQUFkLHlCQUFjO0VBQWQsMEJBQWM7RUFBZCwyQkFBYztFQUFkLHVCQUFjO0VBQWQsd0JBQWM7RUFBZCx5QkFBYztFQUFkO0FBQWM7OztBQUtkOztDQUVDOztBQUVEOzs7Q0FHQzs7QUFFRDs7O0VBR0Usc0JBQXNCO0VBQ3RCLE1BQU07RUFDTixlQUFlO0VBQ2YsTUFBTTtFQUNOLG1CQUFtQjtFQUNuQixNQUFNO0VBQ04scUJBQXFCO0VBQ3JCLE1BQU07QUFDUjs7QUFFQTs7RUFFRSxnQkFBZ0I7QUFDbEI7O0FBRUE7Ozs7OztDQU1DOztBQUVEO0VBQ0UsZ0JBQWdCO0VBQ2hCLE1BQU07RUFDTiw4QkFBOEI7RUFDOUIsTUFBTTtFQUNOLE1BQU07RUFDTixXQUFXO0VBQ1gsTUFBTTtFQUNOLDROQUE0TjtFQUM1TixNQUFNO0VBRUUsNkJBQTZCO0VBQ3JDLE1BQU07QUFDUjs7QUFFQTs7O0NBR0M7O0FBRUQ7RUFDRSxTQUFTO0VBQ1QsTUFBTTtFQUNOLG9CQUFvQjtFQUNwQixNQUFNO0FBQ1I7O0FBRUE7Ozs7Q0FJQzs7QUFFRDtFQUNFLFNBQVM7RUFDVCxNQUFNO0VBQ04sY0FBYztFQUNkLE1BQU07RUFDTixxQkFBcUI7RUFDckIsTUFBTTtBQUNSOztBQUVBOztDQUVDOztBQUVEO0VBQ0UseUNBQXlDO1VBQ2pDLGlDQUFpQztBQUMzQzs7QUFFQTs7Q0FFQzs7QUFFRDs7Ozs7O0VBTUUsa0JBQWtCO0VBQ2xCLG9CQUFvQjtBQUN0Qjs7QUFFQTs7Q0FFQzs7QUFFRDtFQUNFLGNBQWM7RUFDZCx3QkFBd0I7QUFDMUI7O0FBRUE7O0NBRUM7O0FBRUQ7O0VBRUUsbUJBQW1CO0FBQ3JCOztBQUVBOzs7Q0FHQzs7QUFFRDs7OztFQUlFLCtHQUErRztFQUMvRyxNQUFNO0VBQ04sY0FBYztFQUNkLE1BQU07QUFDUjs7QUFFQTs7Q0FFQzs7QUFFRDtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0NBRUM7O0FBRUQ7O0VBRUUsY0FBYztFQUNkLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsd0JBQXdCO0FBQzFCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTs7OztDQUlDOztBQUVEO0VBQ0UsY0FBYztFQUNkLE1BQU07RUFDTixxQkFBcUI7RUFDckIsTUFBTTtFQUNOLHlCQUF5QjtFQUN6QixNQUFNO0FBQ1I7O0FBRUE7Ozs7Q0FJQzs7QUFFRDs7Ozs7RUFLRSxvQkFBb0I7RUFDcEIsTUFBTTtFQUNOLGVBQWU7RUFDZixNQUFNO0VBQ04sb0JBQW9CO0VBQ3BCLE1BQU07RUFDTixvQkFBb0I7RUFDcEIsTUFBTTtFQUNOLGNBQWM7RUFDZCxNQUFNO0VBQ04sU0FBUztFQUNULE1BQU07RUFDTixVQUFVO0VBQ1YsTUFBTTtBQUNSOztBQUVBOztDQUVDOztBQUVEOztFQUVFLG9CQUFvQjtBQUN0Qjs7QUFFQTs7O0NBR0M7O0FBRUQ7Ozs7RUFJRSwwQkFBMEI7RUFDMUIsTUFBTTtFQUNOLDZCQUE2QjtFQUM3QixNQUFNO0VBQ04sc0JBQXNCO0VBQ3RCLE1BQU07QUFDUjs7QUFFQTs7Q0FFQzs7QUFFRDtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Q0FFQzs7QUFFRDtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTs7Q0FFQzs7QUFFRDtFQUNFLHdCQUF3QjtBQUMxQjs7QUFFQTs7Q0FFQzs7QUFFRDs7RUFFRSxZQUFZO0FBQ2Q7O0FBRUE7OztDQUdDOztBQUVEO0VBQ0UsNkJBQTZCO0VBQzdCLE1BQU07RUFDTixvQkFBb0I7RUFDcEIsTUFBTTtBQUNSOztBQUVBOztDQUVDOztBQUVEO0VBQ0Usd0JBQXdCO0FBQzFCOztBQUVBOzs7Q0FHQzs7QUFFRDtFQUNFLDBCQUEwQjtFQUMxQixNQUFNO0VBQ04sYUFBYTtFQUNiLE1BQU07QUFDUjs7QUFFQTs7Q0FFQzs7QUFFRDtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTs7Q0FFQzs7QUFFRDs7Ozs7Ozs7Ozs7OztFQWFFLFNBQVM7QUFDWDs7QUFFQTtFQUNFLFNBQVM7RUFDVCxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxVQUFVO0FBQ1o7O0FBRUE7OztFQUdFLGdCQUFnQjtFQUNoQixTQUFTO0VBQ1QsVUFBVTtBQUNaOztBQUVBOztDQUVDOztBQUVEO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7Q0FHQzs7QUFTRDs7RUFFRSxVQUFVO0VBQ1YsTUFBTTtFQUNOLGNBQWM7RUFDZCxNQUFNO0FBQ1I7O0FBRUE7O0NBRUM7O0FBRUQ7O0VBRUUsZUFBZTtBQUNqQjs7QUFFQTs7Q0FFQzs7QUFFRDtFQUNFLGVBQWU7QUFDakI7O0FBRUE7Ozs7Q0FJQzs7QUFFRDs7Ozs7Ozs7RUFRRSxjQUFjO0VBQ2QsTUFBTTtFQUNOLHNCQUFzQjtFQUN0QixNQUFNO0FBQ1I7O0FBRUE7O0NBRUM7O0FBRUQ7O0VBRUUsZUFBZTtFQUNmLFlBQVk7QUFDZDs7QUFFQSx3RUFBd0U7O0FBRXhFO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0Usd0JBQXdCO0VBQ3hCLHdCQUF3QjtFQUN4QixtQkFBbUI7RUFDbkIsbUJBQW1CO0VBQ25CLGNBQWM7RUFDZCxjQUFjO0VBQ2QsY0FBYztFQUNkLGVBQWU7RUFDZixlQUFlO0VBQ2YsYUFBYTtFQUNiLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIsc0NBQXNDO0VBQ3RDLGVBQWU7RUFDZixvQkFBb0I7RUFDcEIsc0JBQXNCO0VBQ3RCLHVCQUF1QjtFQUN2Qix3QkFBd0I7RUFDeEIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtFQUMzQiw0QkFBNEI7RUFDNUIsc0NBQXNDO0VBQ3RDLGtDQUFrQztFQUNsQywyQkFBMkI7RUFDM0Isc0JBQXNCO0VBQ3RCLDhCQUE4QjtFQUM5QixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixxQkFBcUI7RUFDckIsMkJBQTJCO0VBQzNCLHlCQUF5QjtFQUN6QiwwQkFBMEI7RUFDMUIsMkJBQTJCO0VBQzNCLHVCQUF1QjtFQUN2Qix3QkFBd0I7RUFDeEIseUJBQXlCO0VBQ3pCLHNCQUFzQjtBQUN4Qjs7QUFpREE7RUFDRSx3QkFBd0I7RUFDeEIsd0JBQXdCO0VBQ3hCLG1CQUFtQjtFQUNuQixtQkFBbUI7RUFDbkIsY0FBYztFQUNkLGNBQWM7RUFDZCxjQUFjO0VBQ2QsZUFBZTtFQUNmLGVBQWU7RUFDZixhQUFhO0VBQ2IsYUFBYTtFQUNiLGtCQUFrQjtFQUNsQixzQ0FBc0M7RUFDdEMsZUFBZTtFQUNmLG9CQUFvQjtFQUNwQixzQkFBc0I7RUFDdEIsdUJBQXVCO0VBQ3ZCLHdCQUF3QjtFQUN4QixrQkFBa0I7RUFDbEIsMkJBQTJCO0VBQzNCLDRCQUE0QjtFQUM1QixzQ0FBc0M7RUFDdEMsa0NBQWtDO0VBQ2xDLDJCQUEyQjtFQUMzQixzQkFBc0I7RUFDdEIsOEJBQThCO0VBQzlCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsY0FBYztFQUNkLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHFCQUFxQjtFQUNyQiwyQkFBMkI7RUFDM0IseUJBQXlCO0VBQ3pCLDBCQUEwQjtFQUMxQiwyQkFBMkI7RUFDM0IsdUJBQXVCO0VBQ3ZCLHdCQUF3QjtFQUN4Qix5QkFBeUI7RUFDekIsc0JBQXNCO0FBQ3hCIiwic291cmNlc0NvbnRlbnQiOlsiQHRhaWx3aW5kIGJhc2U7XG5AdGFpbHdpbmQgY29tcG9uZW50cztcbkB0YWlsd2luZCB1dGlsaXRpZXM7XG5cblxuLypcbiEgdGFpbHdpbmRjc3MgdjMuMi40IHwgTUlUIExpY2Vuc2UgfCBodHRwczovL3RhaWx3aW5kY3NzLmNvbVxuKi9cblxuLypcbjEuIFByZXZlbnQgcGFkZGluZyBhbmQgYm9yZGVyIGZyb20gYWZmZWN0aW5nIGVsZW1lbnQgd2lkdGguIChodHRwczovL2dpdGh1Yi5jb20vbW96ZGV2cy9jc3NyZW1lZHkvaXNzdWVzLzQpXG4yLiBBbGxvdyBhZGRpbmcgYSBib3JkZXIgdG8gYW4gZWxlbWVudCBieSBqdXN0IGFkZGluZyBhIGJvcmRlci13aWR0aC4gKGh0dHBzOi8vZ2l0aHViLmNvbS90YWlsd2luZGNzcy90YWlsd2luZGNzcy9wdWxsLzExNilcbiovXG5cbiosXG46OmJlZm9yZSxcbjo6YWZ0ZXIge1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAvKiAxICovXG4gIGJvcmRlci13aWR0aDogMDtcbiAgLyogMiAqL1xuICBib3JkZXItc3R5bGU6IHNvbGlkO1xuICAvKiAyICovXG4gIGJvcmRlci1jb2xvcjogI2U1ZTdlYjtcbiAgLyogMiAqL1xufVxuXG46OmJlZm9yZSxcbjo6YWZ0ZXIge1xuICAtLXR3LWNvbnRlbnQ6ICcnO1xufVxuXG4vKlxuMS4gVXNlIGEgY29uc2lzdGVudCBzZW5zaWJsZSBsaW5lLWhlaWdodCBpbiBhbGwgYnJvd3NlcnMuXG4yLiBQcmV2ZW50IGFkanVzdG1lbnRzIG9mIGZvbnQgc2l6ZSBhZnRlciBvcmllbnRhdGlvbiBjaGFuZ2VzIGluIGlPUy5cbjMuIFVzZSBhIG1vcmUgcmVhZGFibGUgdGFiIHNpemUuXG40LiBVc2UgdGhlIHVzZXIncyBjb25maWd1cmVkIGBzYW5zYCBmb250LWZhbWlseSBieSBkZWZhdWx0LlxuNS4gVXNlIHRoZSB1c2VyJ3MgY29uZmlndXJlZCBgc2Fuc2AgZm9udC1mZWF0dXJlLXNldHRpbmdzIGJ5IGRlZmF1bHQuXG4qL1xuXG5odG1sIHtcbiAgbGluZS1oZWlnaHQ6IDEuNTtcbiAgLyogMSAqL1xuICAtd2Via2l0LXRleHQtc2l6ZS1hZGp1c3Q6IDEwMCU7XG4gIC8qIDIgKi9cbiAgLyogMyAqL1xuICB0YWItc2l6ZTogNDtcbiAgLyogMyAqL1xuICBmb250LWZhbWlseTogdWktc2Fucy1zZXJpZiwgc3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIFwiU2Vnb2UgVUlcIiwgUm9ib3RvLCBcIkhlbHZldGljYSBOZXVlXCIsIEFyaWFsLCBcIk5vdG8gU2Fuc1wiLCBzYW5zLXNlcmlmLCBcIkFwcGxlIENvbG9yIEVtb2ppXCIsIFwiU2Vnb2UgVUkgRW1vamlcIiwgXCJTZWdvZSBVSSBTeW1ib2xcIiwgXCJOb3RvIENvbG9yIEVtb2ppXCI7XG4gIC8qIDQgKi9cbiAgLXdlYmtpdC1mb250LWZlYXR1cmUtc2V0dGluZ3M6IG5vcm1hbDtcbiAgICAgICAgICBmb250LWZlYXR1cmUtc2V0dGluZ3M6IG5vcm1hbDtcbiAgLyogNSAqL1xufVxuXG4vKlxuMS4gUmVtb3ZlIHRoZSBtYXJnaW4gaW4gYWxsIGJyb3dzZXJzLlxuMi4gSW5oZXJpdCBsaW5lLWhlaWdodCBmcm9tIGBodG1sYCBzbyB1c2VycyBjYW4gc2V0IHRoZW0gYXMgYSBjbGFzcyBkaXJlY3RseSBvbiB0aGUgYGh0bWxgIGVsZW1lbnQuXG4qL1xuXG5ib2R5IHtcbiAgbWFyZ2luOiAwO1xuICAvKiAxICovXG4gIGxpbmUtaGVpZ2h0OiBpbmhlcml0O1xuICAvKiAyICovXG59XG5cbi8qXG4xLiBBZGQgdGhlIGNvcnJlY3QgaGVpZ2h0IGluIEZpcmVmb3guXG4yLiBDb3JyZWN0IHRoZSBpbmhlcml0YW5jZSBvZiBib3JkZXIgY29sb3IgaW4gRmlyZWZveC4gKGh0dHBzOi8vYnVnemlsbGEubW96aWxsYS5vcmcvc2hvd19idWcuY2dpP2lkPTE5MDY1NSlcbjMuIEVuc3VyZSBob3Jpem9udGFsIHJ1bGVzIGFyZSB2aXNpYmxlIGJ5IGRlZmF1bHQuXG4qL1xuXG5ociB7XG4gIGhlaWdodDogMDtcbiAgLyogMSAqL1xuICBjb2xvcjogaW5oZXJpdDtcbiAgLyogMiAqL1xuICBib3JkZXItdG9wLXdpZHRoOiAxcHg7XG4gIC8qIDMgKi9cbn1cblxuLypcbkFkZCB0aGUgY29ycmVjdCB0ZXh0IGRlY29yYXRpb24gaW4gQ2hyb21lLCBFZGdlLCBhbmQgU2FmYXJpLlxuKi9cblxuYWJicjp3aGVyZShbdGl0bGVdKSB7XG4gIC13ZWJraXQtdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmUgZG90dGVkO1xuICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lIGRvdHRlZDtcbn1cblxuLypcblJlbW92ZSB0aGUgZGVmYXVsdCBmb250IHNpemUgYW5kIHdlaWdodCBmb3IgaGVhZGluZ3MuXG4qL1xuXG5oMSxcbmgyLFxuaDMsXG5oNCxcbmg1LFxuaDYge1xuICBmb250LXNpemU6IGluaGVyaXQ7XG4gIGZvbnQtd2VpZ2h0OiBpbmhlcml0O1xufVxuXG4vKlxuUmVzZXQgbGlua3MgdG8gb3B0aW1pemUgZm9yIG9wdC1pbiBzdHlsaW5nIGluc3RlYWQgb2Ygb3B0LW91dC5cbiovXG5cbmEge1xuICBjb2xvcjogaW5oZXJpdDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBpbmhlcml0O1xufVxuXG4vKlxuQWRkIHRoZSBjb3JyZWN0IGZvbnQgd2VpZ2h0IGluIEVkZ2UgYW5kIFNhZmFyaS5cbiovXG5cbmIsXG5zdHJvbmcge1xuICBmb250LXdlaWdodDogYm9sZGVyO1xufVxuXG4vKlxuMS4gVXNlIHRoZSB1c2VyJ3MgY29uZmlndXJlZCBgbW9ub2AgZm9udCBmYW1pbHkgYnkgZGVmYXVsdC5cbjIuIENvcnJlY3QgdGhlIG9kZCBgZW1gIGZvbnQgc2l6aW5nIGluIGFsbCBicm93c2Vycy5cbiovXG5cbmNvZGUsXG5rYmQsXG5zYW1wLFxucHJlIHtcbiAgZm9udC1mYW1pbHk6IHVpLW1vbm9zcGFjZSwgU0ZNb25vLVJlZ3VsYXIsIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCBcIkxpYmVyYXRpb24gTW9ub1wiLCBcIkNvdXJpZXIgTmV3XCIsIG1vbm9zcGFjZTtcbiAgLyogMSAqL1xuICBmb250LXNpemU6IDFlbTtcbiAgLyogMiAqL1xufVxuXG4vKlxuQWRkIHRoZSBjb3JyZWN0IGZvbnQgc2l6ZSBpbiBhbGwgYnJvd3NlcnMuXG4qL1xuXG5zbWFsbCB7XG4gIGZvbnQtc2l6ZTogODAlO1xufVxuXG4vKlxuUHJldmVudCBgc3ViYCBhbmQgYHN1cGAgZWxlbWVudHMgZnJvbSBhZmZlY3RpbmcgdGhlIGxpbmUgaGVpZ2h0IGluIGFsbCBicm93c2Vycy5cbiovXG5cbnN1YixcbnN1cCB7XG4gIGZvbnQtc2l6ZTogNzUlO1xuICBsaW5lLWhlaWdodDogMDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB2ZXJ0aWNhbC1hbGlnbjogYmFzZWxpbmU7XG59XG5cbnN1YiB7XG4gIGJvdHRvbTogLTAuMjVlbTtcbn1cblxuc3VwIHtcbiAgdG9wOiAtMC41ZW07XG59XG5cbi8qXG4xLiBSZW1vdmUgdGV4dCBpbmRlbnRhdGlvbiBmcm9tIHRhYmxlIGNvbnRlbnRzIGluIENocm9tZSBhbmQgU2FmYXJpLiAoaHR0cHM6Ly9idWdzLmNocm9taXVtLm9yZy9wL2Nocm9taXVtL2lzc3Vlcy9kZXRhaWw/aWQ9OTk5MDg4LCBodHRwczovL2J1Z3Mud2Via2l0Lm9yZy9zaG93X2J1Zy5jZ2k/aWQ9MjAxMjk3KVxuMi4gQ29ycmVjdCB0YWJsZSBib3JkZXIgY29sb3IgaW5oZXJpdGFuY2UgaW4gYWxsIENocm9tZSBhbmQgU2FmYXJpLiAoaHR0cHM6Ly9idWdzLmNocm9taXVtLm9yZy9wL2Nocm9taXVtL2lzc3Vlcy9kZXRhaWw/aWQ9OTM1NzI5LCBodHRwczovL2J1Z3Mud2Via2l0Lm9yZy9zaG93X2J1Zy5jZ2k/aWQ9MTk1MDE2KVxuMy4gUmVtb3ZlIGdhcHMgYmV0d2VlbiB0YWJsZSBib3JkZXJzIGJ5IGRlZmF1bHQuXG4qL1xuXG50YWJsZSB7XG4gIHRleHQtaW5kZW50OiAwO1xuICAvKiAxICovXG4gIGJvcmRlci1jb2xvcjogaW5oZXJpdDtcbiAgLyogMiAqL1xuICBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlO1xuICAvKiAzICovXG59XG5cbi8qXG4xLiBDaGFuZ2UgdGhlIGZvbnQgc3R5bGVzIGluIGFsbCBicm93c2Vycy5cbjIuIFJlbW92ZSB0aGUgbWFyZ2luIGluIEZpcmVmb3ggYW5kIFNhZmFyaS5cbjMuIFJlbW92ZSBkZWZhdWx0IHBhZGRpbmcgaW4gYWxsIGJyb3dzZXJzLlxuKi9cblxuYnV0dG9uLFxuaW5wdXQsXG5vcHRncm91cCxcbnNlbGVjdCxcbnRleHRhcmVhIHtcbiAgZm9udC1mYW1pbHk6IGluaGVyaXQ7XG4gIC8qIDEgKi9cbiAgZm9udC1zaXplOiAxMDAlO1xuICAvKiAxICovXG4gIGZvbnQtd2VpZ2h0OiBpbmhlcml0O1xuICAvKiAxICovXG4gIGxpbmUtaGVpZ2h0OiBpbmhlcml0O1xuICAvKiAxICovXG4gIGNvbG9yOiBpbmhlcml0O1xuICAvKiAxICovXG4gIG1hcmdpbjogMDtcbiAgLyogMiAqL1xuICBwYWRkaW5nOiAwO1xuICAvKiAzICovXG59XG5cbi8qXG5SZW1vdmUgdGhlIGluaGVyaXRhbmNlIG9mIHRleHQgdHJhbnNmb3JtIGluIEVkZ2UgYW5kIEZpcmVmb3guXG4qL1xuXG5idXR0b24sXG5zZWxlY3Qge1xuICB0ZXh0LXRyYW5zZm9ybTogbm9uZTtcbn1cblxuLypcbjEuIENvcnJlY3QgdGhlIGluYWJpbGl0eSB0byBzdHlsZSBjbGlja2FibGUgdHlwZXMgaW4gaU9TIGFuZCBTYWZhcmkuXG4yLiBSZW1vdmUgZGVmYXVsdCBidXR0b24gc3R5bGVzLlxuKi9cblxuYnV0dG9uLFxuW3R5cGU9J2J1dHRvbiddLFxuW3R5cGU9J3Jlc2V0J10sXG5bdHlwZT0nc3VibWl0J10ge1xuICAtd2Via2l0LWFwcGVhcmFuY2U6IGJ1dHRvbjtcbiAgLyogMSAqL1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAgLyogMiAqL1xuICBiYWNrZ3JvdW5kLWltYWdlOiBub25lO1xuICAvKiAyICovXG59XG5cbi8qXG5Vc2UgdGhlIG1vZGVybiBGaXJlZm94IGZvY3VzIHN0eWxlIGZvciBhbGwgZm9jdXNhYmxlIGVsZW1lbnRzLlxuKi9cblxuOi1tb3otZm9jdXNyaW5nIHtcbiAgb3V0bGluZTogYXV0bztcbn1cblxuLypcblJlbW92ZSB0aGUgYWRkaXRpb25hbCBgOmludmFsaWRgIHN0eWxlcyBpbiBGaXJlZm94LiAoaHR0cHM6Ly9naXRodWIuY29tL21vemlsbGEvZ2Vja28tZGV2L2Jsb2IvMmY5ZWFjZDlkM2Q5OTVjOTM3YjQyNTFhNTU1N2Q5NWQ0OTRjOWJlMS9sYXlvdXQvc3R5bGUvcmVzL2Zvcm1zLmNzcyNMNzI4LUw3MzcpXG4qL1xuXG46LW1vei11aS1pbnZhbGlkIHtcbiAgYm94LXNoYWRvdzogbm9uZTtcbn1cblxuLypcbkFkZCB0aGUgY29ycmVjdCB2ZXJ0aWNhbCBhbGlnbm1lbnQgaW4gQ2hyb21lIGFuZCBGaXJlZm94LlxuKi9cblxucHJvZ3Jlc3Mge1xuICB2ZXJ0aWNhbC1hbGlnbjogYmFzZWxpbmU7XG59XG5cbi8qXG5Db3JyZWN0IHRoZSBjdXJzb3Igc3R5bGUgb2YgaW5jcmVtZW50IGFuZCBkZWNyZW1lbnQgYnV0dG9ucyBpbiBTYWZhcmkuXG4qL1xuXG46Oi13ZWJraXQtaW5uZXItc3Bpbi1idXR0b24sXG46Oi13ZWJraXQtb3V0ZXItc3Bpbi1idXR0b24ge1xuICBoZWlnaHQ6IGF1dG87XG59XG5cbi8qXG4xLiBDb3JyZWN0IHRoZSBvZGQgYXBwZWFyYW5jZSBpbiBDaHJvbWUgYW5kIFNhZmFyaS5cbjIuIENvcnJlY3QgdGhlIG91dGxpbmUgc3R5bGUgaW4gU2FmYXJpLlxuKi9cblxuW3R5cGU9J3NlYXJjaCddIHtcbiAgLXdlYmtpdC1hcHBlYXJhbmNlOiB0ZXh0ZmllbGQ7XG4gIC8qIDEgKi9cbiAgb3V0bGluZS1vZmZzZXQ6IC0ycHg7XG4gIC8qIDIgKi9cbn1cblxuLypcblJlbW92ZSB0aGUgaW5uZXIgcGFkZGluZyBpbiBDaHJvbWUgYW5kIFNhZmFyaSBvbiBtYWNPUy5cbiovXG5cbjo6LXdlYmtpdC1zZWFyY2gtZGVjb3JhdGlvbiB7XG4gIC13ZWJraXQtYXBwZWFyYW5jZTogbm9uZTtcbn1cblxuLypcbjEuIENvcnJlY3QgdGhlIGluYWJpbGl0eSB0byBzdHlsZSBjbGlja2FibGUgdHlwZXMgaW4gaU9TIGFuZCBTYWZhcmkuXG4yLiBDaGFuZ2UgZm9udCBwcm9wZXJ0aWVzIHRvIGBpbmhlcml0YCBpbiBTYWZhcmkuXG4qL1xuXG46Oi13ZWJraXQtZmlsZS11cGxvYWQtYnV0dG9uIHtcbiAgLXdlYmtpdC1hcHBlYXJhbmNlOiBidXR0b247XG4gIC8qIDEgKi9cbiAgZm9udDogaW5oZXJpdDtcbiAgLyogMiAqL1xufVxuXG4vKlxuQWRkIHRoZSBjb3JyZWN0IGRpc3BsYXkgaW4gQ2hyb21lIGFuZCBTYWZhcmkuXG4qL1xuXG5zdW1tYXJ5IHtcbiAgZGlzcGxheTogbGlzdC1pdGVtO1xufVxuXG4vKlxuUmVtb3ZlcyB0aGUgZGVmYXVsdCBzcGFjaW5nIGFuZCBib3JkZXIgZm9yIGFwcHJvcHJpYXRlIGVsZW1lbnRzLlxuKi9cblxuYmxvY2txdW90ZSxcbmRsLFxuZGQsXG5oMSxcbmgyLFxuaDMsXG5oNCxcbmg1LFxuaDYsXG5ocixcbmZpZ3VyZSxcbnAsXG5wcmUge1xuICBtYXJnaW46IDA7XG59XG5cbmZpZWxkc2V0IHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xufVxuXG5sZWdlbmQge1xuICBwYWRkaW5nOiAwO1xufVxuXG5vbCxcbnVsLFxubWVudSB7XG4gIGxpc3Qtc3R5bGU6IG5vbmU7XG4gIG1hcmdpbjogMDtcbiAgcGFkZGluZzogMDtcbn1cblxuLypcblByZXZlbnQgcmVzaXppbmcgdGV4dGFyZWFzIGhvcml6b250YWxseSBieSBkZWZhdWx0LlxuKi9cblxudGV4dGFyZWEge1xuICByZXNpemU6IHZlcnRpY2FsO1xufVxuXG4vKlxuMS4gUmVzZXQgdGhlIGRlZmF1bHQgcGxhY2Vob2xkZXIgb3BhY2l0eSBpbiBGaXJlZm94LiAoaHR0cHM6Ly9naXRodWIuY29tL3RhaWx3aW5kbGFicy90YWlsd2luZGNzcy9pc3N1ZXMvMzMwMClcbjIuIFNldCB0aGUgZGVmYXVsdCBwbGFjZWhvbGRlciBjb2xvciB0byB0aGUgdXNlcidzIGNvbmZpZ3VyZWQgZ3JheSA0MDAgY29sb3IuXG4qL1xuXG5pbnB1dDo6LXdlYmtpdC1pbnB1dC1wbGFjZWhvbGRlciwgdGV4dGFyZWE6Oi13ZWJraXQtaW5wdXQtcGxhY2Vob2xkZXIge1xuICBvcGFjaXR5OiAxO1xuICAvKiAxICovXG4gIGNvbG9yOiAjOWNhM2FmO1xuICAvKiAyICovXG59XG5cbmlucHV0OjpwbGFjZWhvbGRlcixcbnRleHRhcmVhOjpwbGFjZWhvbGRlciB7XG4gIG9wYWNpdHk6IDE7XG4gIC8qIDEgKi9cbiAgY29sb3I6ICM5Y2EzYWY7XG4gIC8qIDIgKi9cbn1cblxuLypcblNldCB0aGUgZGVmYXVsdCBjdXJzb3IgZm9yIGJ1dHRvbnMuXG4qL1xuXG5idXR0b24sXG5bcm9sZT1cImJ1dHRvblwiXSB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuLypcbk1ha2Ugc3VyZSBkaXNhYmxlZCBidXR0b25zIGRvbid0IGdldCB0aGUgcG9pbnRlciBjdXJzb3IuXG4qL1xuXG46ZGlzYWJsZWQge1xuICBjdXJzb3I6IGRlZmF1bHQ7XG59XG5cbi8qXG4xLiBNYWtlIHJlcGxhY2VkIGVsZW1lbnRzIGBkaXNwbGF5OiBibG9ja2AgYnkgZGVmYXVsdC4gKGh0dHBzOi8vZ2l0aHViLmNvbS9tb3pkZXZzL2Nzc3JlbWVkeS9pc3N1ZXMvMTQpXG4yLiBBZGQgYHZlcnRpY2FsLWFsaWduOiBtaWRkbGVgIHRvIGFsaWduIHJlcGxhY2VkIGVsZW1lbnRzIG1vcmUgc2Vuc2libHkgYnkgZGVmYXVsdC4gKGh0dHBzOi8vZ2l0aHViLmNvbS9qZW5zaW1tb25zL2Nzc3JlbWVkeS9pc3N1ZXMvMTQjaXNzdWVjb21tZW50LTYzNDkzNDIxMClcbiAgIFRoaXMgY2FuIHRyaWdnZXIgYSBwb29ybHkgY29uc2lkZXJlZCBsaW50IGVycm9yIGluIHNvbWUgdG9vbHMgYnV0IGlzIGluY2x1ZGVkIGJ5IGRlc2lnbi5cbiovXG5cbmltZyxcbnN2ZyxcbnZpZGVvLFxuY2FudmFzLFxuYXVkaW8sXG5pZnJhbWUsXG5lbWJlZCxcbm9iamVjdCB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICAvKiAxICovXG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG4gIC8qIDIgKi9cbn1cblxuLypcbkNvbnN0cmFpbiBpbWFnZXMgYW5kIHZpZGVvcyB0byB0aGUgcGFyZW50IHdpZHRoIGFuZCBwcmVzZXJ2ZSB0aGVpciBpbnRyaW5zaWMgYXNwZWN0IHJhdGlvLiAoaHR0cHM6Ly9naXRodWIuY29tL21vemRldnMvY3NzcmVtZWR5L2lzc3Vlcy8xNClcbiovXG5cbmltZyxcbnZpZGVvIHtcbiAgbWF4LXdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IGF1dG87XG59XG5cbi8qIE1ha2UgZWxlbWVudHMgd2l0aCB0aGUgSFRNTCBoaWRkZW4gYXR0cmlidXRlIHN0YXkgaGlkZGVuIGJ5IGRlZmF1bHQgKi9cblxuW2hpZGRlbl0ge1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4qLCA6OmJlZm9yZSwgOjphZnRlciB7XG4gIC0tdHctYm9yZGVyLXNwYWNpbmcteDogMDtcbiAgLS10dy1ib3JkZXItc3BhY2luZy15OiAwO1xuICAtLXR3LXRyYW5zbGF0ZS14OiAwO1xuICAtLXR3LXRyYW5zbGF0ZS15OiAwO1xuICAtLXR3LXJvdGF0ZTogMDtcbiAgLS10dy1za2V3LXg6IDA7XG4gIC0tdHctc2tldy15OiAwO1xuICAtLXR3LXNjYWxlLXg6IDE7XG4gIC0tdHctc2NhbGUteTogMTtcbiAgLS10dy1wYW4teDogIDtcbiAgLS10dy1wYW4teTogIDtcbiAgLS10dy1waW5jaC16b29tOiAgO1xuICAtLXR3LXNjcm9sbC1zbmFwLXN0cmljdG5lc3M6IHByb3hpbWl0eTtcbiAgLS10dy1vcmRpbmFsOiAgO1xuICAtLXR3LXNsYXNoZWQtemVybzogIDtcbiAgLS10dy1udW1lcmljLWZpZ3VyZTogIDtcbiAgLS10dy1udW1lcmljLXNwYWNpbmc6ICA7XG4gIC0tdHctbnVtZXJpYy1mcmFjdGlvbjogIDtcbiAgLS10dy1yaW5nLWluc2V0OiAgO1xuICAtLXR3LXJpbmctb2Zmc2V0LXdpZHRoOiAwcHg7XG4gIC0tdHctcmluZy1vZmZzZXQtY29sb3I6ICNmZmY7XG4gIC0tdHctcmluZy1jb2xvcjogcmdiKDU5IDEzMCAyNDYgLyAwLjUpO1xuICAtLXR3LXJpbmctb2Zmc2V0LXNoYWRvdzogMCAwICMwMDAwO1xuICAtLXR3LXJpbmctc2hhZG93OiAwIDAgIzAwMDA7XG4gIC0tdHctc2hhZG93OiAwIDAgIzAwMDA7XG4gIC0tdHctc2hhZG93LWNvbG9yZWQ6IDAgMCAjMDAwMDtcbiAgLS10dy1ibHVyOiAgO1xuICAtLXR3LWJyaWdodG5lc3M6ICA7XG4gIC0tdHctY29udHJhc3Q6ICA7XG4gIC0tdHctZ3JheXNjYWxlOiAgO1xuICAtLXR3LWh1ZS1yb3RhdGU6ICA7XG4gIC0tdHctaW52ZXJ0OiAgO1xuICAtLXR3LXNhdHVyYXRlOiAgO1xuICAtLXR3LXNlcGlhOiAgO1xuICAtLXR3LWRyb3Atc2hhZG93OiAgO1xuICAtLXR3LWJhY2tkcm9wLWJsdXI6ICA7XG4gIC0tdHctYmFja2Ryb3AtYnJpZ2h0bmVzczogIDtcbiAgLS10dy1iYWNrZHJvcC1jb250cmFzdDogIDtcbiAgLS10dy1iYWNrZHJvcC1ncmF5c2NhbGU6ICA7XG4gIC0tdHctYmFja2Ryb3AtaHVlLXJvdGF0ZTogIDtcbiAgLS10dy1iYWNrZHJvcC1pbnZlcnQ6ICA7XG4gIC0tdHctYmFja2Ryb3Atb3BhY2l0eTogIDtcbiAgLS10dy1iYWNrZHJvcC1zYXR1cmF0ZTogIDtcbiAgLS10dy1iYWNrZHJvcC1zZXBpYTogIDtcbn1cblxuOjotd2Via2l0LWJhY2tkcm9wIHtcbiAgLS10dy1ib3JkZXItc3BhY2luZy14OiAwO1xuICAtLXR3LWJvcmRlci1zcGFjaW5nLXk6IDA7XG4gIC0tdHctdHJhbnNsYXRlLXg6IDA7XG4gIC0tdHctdHJhbnNsYXRlLXk6IDA7XG4gIC0tdHctcm90YXRlOiAwO1xuICAtLXR3LXNrZXcteDogMDtcbiAgLS10dy1za2V3LXk6IDA7XG4gIC0tdHctc2NhbGUteDogMTtcbiAgLS10dy1zY2FsZS15OiAxO1xuICAtLXR3LXBhbi14OiAgO1xuICAtLXR3LXBhbi15OiAgO1xuICAtLXR3LXBpbmNoLXpvb206ICA7XG4gIC0tdHctc2Nyb2xsLXNuYXAtc3RyaWN0bmVzczogcHJveGltaXR5O1xuICAtLXR3LW9yZGluYWw6ICA7XG4gIC0tdHctc2xhc2hlZC16ZXJvOiAgO1xuICAtLXR3LW51bWVyaWMtZmlndXJlOiAgO1xuICAtLXR3LW51bWVyaWMtc3BhY2luZzogIDtcbiAgLS10dy1udW1lcmljLWZyYWN0aW9uOiAgO1xuICAtLXR3LXJpbmctaW5zZXQ6ICA7XG4gIC0tdHctcmluZy1vZmZzZXQtd2lkdGg6IDBweDtcbiAgLS10dy1yaW5nLW9mZnNldC1jb2xvcjogI2ZmZjtcbiAgLS10dy1yaW5nLWNvbG9yOiByZ2IoNTkgMTMwIDI0NiAvIDAuNSk7XG4gIC0tdHctcmluZy1vZmZzZXQtc2hhZG93OiAwIDAgIzAwMDA7XG4gIC0tdHctcmluZy1zaGFkb3c6IDAgMCAjMDAwMDtcbiAgLS10dy1zaGFkb3c6IDAgMCAjMDAwMDtcbiAgLS10dy1zaGFkb3ctY29sb3JlZDogMCAwICMwMDAwO1xuICAtLXR3LWJsdXI6ICA7XG4gIC0tdHctYnJpZ2h0bmVzczogIDtcbiAgLS10dy1jb250cmFzdDogIDtcbiAgLS10dy1ncmF5c2NhbGU6ICA7XG4gIC0tdHctaHVlLXJvdGF0ZTogIDtcbiAgLS10dy1pbnZlcnQ6ICA7XG4gIC0tdHctc2F0dXJhdGU6ICA7XG4gIC0tdHctc2VwaWE6ICA7XG4gIC0tdHctZHJvcC1zaGFkb3c6ICA7XG4gIC0tdHctYmFja2Ryb3AtYmx1cjogIDtcbiAgLS10dy1iYWNrZHJvcC1icmlnaHRuZXNzOiAgO1xuICAtLXR3LWJhY2tkcm9wLWNvbnRyYXN0OiAgO1xuICAtLXR3LWJhY2tkcm9wLWdyYXlzY2FsZTogIDtcbiAgLS10dy1iYWNrZHJvcC1odWUtcm90YXRlOiAgO1xuICAtLXR3LWJhY2tkcm9wLWludmVydDogIDtcbiAgLS10dy1iYWNrZHJvcC1vcGFjaXR5OiAgO1xuICAtLXR3LWJhY2tkcm9wLXNhdHVyYXRlOiAgO1xuICAtLXR3LWJhY2tkcm9wLXNlcGlhOiAgO1xufVxuXG46OmJhY2tkcm9wIHtcbiAgLS10dy1ib3JkZXItc3BhY2luZy14OiAwO1xuICAtLXR3LWJvcmRlci1zcGFjaW5nLXk6IDA7XG4gIC0tdHctdHJhbnNsYXRlLXg6IDA7XG4gIC0tdHctdHJhbnNsYXRlLXk6IDA7XG4gIC0tdHctcm90YXRlOiAwO1xuICAtLXR3LXNrZXcteDogMDtcbiAgLS10dy1za2V3LXk6IDA7XG4gIC0tdHctc2NhbGUteDogMTtcbiAgLS10dy1zY2FsZS15OiAxO1xuICAtLXR3LXBhbi14OiAgO1xuICAtLXR3LXBhbi15OiAgO1xuICAtLXR3LXBpbmNoLXpvb206ICA7XG4gIC0tdHctc2Nyb2xsLXNuYXAtc3RyaWN0bmVzczogcHJveGltaXR5O1xuICAtLXR3LW9yZGluYWw6ICA7XG4gIC0tdHctc2xhc2hlZC16ZXJvOiAgO1xuICAtLXR3LW51bWVyaWMtZmlndXJlOiAgO1xuICAtLXR3LW51bWVyaWMtc3BhY2luZzogIDtcbiAgLS10dy1udW1lcmljLWZyYWN0aW9uOiAgO1xuICAtLXR3LXJpbmctaW5zZXQ6ICA7XG4gIC0tdHctcmluZy1vZmZzZXQtd2lkdGg6IDBweDtcbiAgLS10dy1yaW5nLW9mZnNldC1jb2xvcjogI2ZmZjtcbiAgLS10dy1yaW5nLWNvbG9yOiByZ2IoNTkgMTMwIDI0NiAvIDAuNSk7XG4gIC0tdHctcmluZy1vZmZzZXQtc2hhZG93OiAwIDAgIzAwMDA7XG4gIC0tdHctcmluZy1zaGFkb3c6IDAgMCAjMDAwMDtcbiAgLS10dy1zaGFkb3c6IDAgMCAjMDAwMDtcbiAgLS10dy1zaGFkb3ctY29sb3JlZDogMCAwICMwMDAwO1xuICAtLXR3LWJsdXI6ICA7XG4gIC0tdHctYnJpZ2h0bmVzczogIDtcbiAgLS10dy1jb250cmFzdDogIDtcbiAgLS10dy1ncmF5c2NhbGU6ICA7XG4gIC0tdHctaHVlLXJvdGF0ZTogIDtcbiAgLS10dy1pbnZlcnQ6ICA7XG4gIC0tdHctc2F0dXJhdGU6ICA7XG4gIC0tdHctc2VwaWE6ICA7XG4gIC0tdHctZHJvcC1zaGFkb3c6ICA7XG4gIC0tdHctYmFja2Ryb3AtYmx1cjogIDtcbiAgLS10dy1iYWNrZHJvcC1icmlnaHRuZXNzOiAgO1xuICAtLXR3LWJhY2tkcm9wLWNvbnRyYXN0OiAgO1xuICAtLXR3LWJhY2tkcm9wLWdyYXlzY2FsZTogIDtcbiAgLS10dy1iYWNrZHJvcC1odWUtcm90YXRlOiAgO1xuICAtLXR3LWJhY2tkcm9wLWludmVydDogIDtcbiAgLS10dy1iYWNrZHJvcC1vcGFjaXR5OiAgO1xuICAtLXR3LWJhY2tkcm9wLXNhdHVyYXRlOiAgO1xuICAtLXR3LWJhY2tkcm9wLXNlcGlhOiAgO1xufVxuXG4iXSwic291cmNlUm9vdCI6IiJ9 */</style></head>
+  <body class="light">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div class="themechanger"><div style="display: flex; align-items: center; position: relative; width: 40px; height: 20px; border: 2px solid rgb(230, 230, 230); border-radius: 20px; background-color: rgb(249, 249, 249); cursor: pointer; -webkit-tap-highlight-color: transparent; transition-duration: 250ms; transition-property: background-color, border-color; transition-timing-function: ease;"><div style="position: absolute; left: 0px; width: 20px; height: 20px; border-radius: 10px; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.314) 0px 1px 1px 0px;"></div><div style="display: none; position: absolute; left: -2px; width: 100%; height: 100%; border: 2px solid white; border-radius: 20px; background-color: white; opacity: 0.5;"></div></div><span>Change Theme</span></div><div class="leftelem"><img src="./React App_files/Swiggy_logo.svg.png" alt="logo" width="200" height="70"><div class="leftelem__login"><a href="http://localhost:3000/login">Login</a><a href="http://localhost:3000/Signup"><button class="leftelem__signup">Sign Up</button></a></div></div><div><h1 class="h1tag">Unexpected Guests?. </h1><h3 class="h3tag">Order food from favourite restaurants near you.</h3></div><img class="intro" src="./React App_files/Lunch.jpg" alt="img"><div class="Part1div"><div class="Part1div__LocationBar"><input class="Part1div__Loco" type="text" placeholder="Enter your delivery location "><div class="Part1div__ico"><span class="icospan"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ico" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><desc></desc><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r=".5" fill="currentColor"></circle><circle cx="12" cy="12" r="7"></circle><line x1="12" y1="3" x2="12" y2="5"></line><line x1="3" y1="12" x2="5" y2="12"></line><line x1="12" y1="19" x2="12" y2="21"></line><line x1="19" y1="12" x2="21" y2="12"></line></svg> Locate Me</span></div><div><button class="Part1div__FindButton">Find Food </button></div></div><div class="PopularCity"><h4 class="font-mono">Popular Cities in India</h4><a href="http://localhost:3000/top#" class="popcity">Ahmedabad</a> <a href="http://localhost:3000/top#" class="popcity">Bangalore</a> <a href="http://localhost:3000/top#" class="popcity">Chennai</a> <a href="http://localhost:3000/top#" class="popcity">Delhi</a> <a href="http://localhost:3000/top#" class="popcity">Gurgaon</a> <a href="http://localhost:3000/top#" class="popcity">Hyderabad</a> <a href="http://localhost:3000/top#" class="popcity">Kolkata</a> <a href="http://localhost:3000/top#" class="popcity">Mumbai</a> <a href="http://localhost:3000/top#" class="popcity">Pune&amp; more.</a></div></div><div class="Part2div"><div class="Part2div__subdiv"><div class="Part2div__block"><img width="100" height="200" src="./React App_files/4x_-_No_min_order_x0bxuf"><h4>No Minimum Order</h4><p>Order in for yourself or for the group, with no restrictions on order value</p></div><div class="Part2div__block"><img width="100" height="200" src="./React App_files/4x_Live_order_zzotwy"><h4>Live Order Tracking</h4><p>Know where your order is at all times, from the restaurant to your doorstep</p></div><div class="Part2div__block"><img width="100" height="200" src="./React App_files/4x_-_Super_fast_delivery_awv7sn"><h4>Lightning-Fast Delivery</h4><p>Experience Swiggy's superfast delivery for food delivered fresh &amp; on time</p></div></div></div><div class="Part3Container"><div class="Part3Container__Part3content1"><h1 class="h1tag">Restaurants in your pocket</h1></div><div class="Part3Container__Part3content2"><h4>Order from your favorite restaurants &amp; track on the go, with the all-new Swiggy app.</h4></div><div class="Part3Container__icons"><img width="150" height="50" src="./React App_files/png-clipart-google-play-app-store-android-mobile-app-android-text-logo.png" alt="play"><img width="150" height="50" src="./React App_files/png-transparent-app-store-apple-logo-apple-text-logo-video-game.png"></div><div class="Part3div"><img width="400" height="500" src="./React App_files/pixel_wbdy4n"><img width="400" height="500" src="./React App_files/iPhone_wgconp_j0d1fn"></div></div><div class="Part4div"><div class="Part4div__listed"><ul><h4>COMPANY</h4><li><a href="http://localhost:3000/top#">About us</a></li><li><a href="http://localhost:3000/top#">Team</a></li><li><a href="http://localhost:3000/top#">Career</a></li><li><a href="http://localhost:3000/top#">Swiggy Blog</a></li><li><a href="http://localhost:3000/top#">Bug Bounty</a></li><li><a href="http://localhost:3000/top#">Swiggy one</a></li><li><a href="http://localhost:3000/top#">Swiggy Corporate</a></li><li><a href="http://localhost:3000/top#">Swiggy Instamart</a></li><li><a href="http://localhost:3000/top#">Swiggy Genie</a></li></ul></div><div class="Part4div__listed"><h4>CONTACT</h4><ul><li><a href="http://localhost:3000/top#">Help &amp; Support</a></li><li><a href="http://localhost:3000/top#">Partner with us</a></li><li><a href="http://localhost:3000/top#">Ride with us</a></li></ul></div><div class="Part4div__listed"><h4>LEGAL</h4><ul><li><a href="http://localhost:3000/top#">Terms &amp; Conditions</a></li><li><a href="http://localhost:3000/top#">Refund and Cancellation</a></li><li><a href="http://localhost:3000/top#">Privacy Policy</a></li><li><a href="http://localhost:3000/top#">Cookies policy</a></li><li><a href="http://localhost:3000/top#">Offer Terms</a></li><li><a href="http://localhost:3000/top#">Phishing &amp; Fraud</a></li><li><a href="http://localhost:3000/top#">Corporate – Swiggy Money Codes Terms and Conditions</a></li><li><a href="http://localhost:3000/top#">Corporate - Swiggy Discount Voucher Terms and Conditions</a></li></ul><div class="Part4div__icons2"><img width="150" height="100" src="./React App_files/logostore.png" alt="play"></div></div></div><div class="Part5div"><span class="h3tag">WE DELIVER TO</span> <div class="people"><a href="http://localhost:3000/top#">Abohar</a></div><div class="people"><a href="http://localhost:3000/top#">Adilabad</a></div><div class="people"><a href="http://localhost:3000/top#">Adityapur</a></div><div class="people"><a href="http://localhost:3000/top#">Adoni</a></div><div class="people"><a href="http://localhost:3000/top#">Agartala</a></div><div class="people"><a href="http://localhost:3000/top#">Agra</a></div><div class="people"><a href="http://localhost:3000/top#">Ahmedabad</a></div><div class="people"><a href="http://localhost:3000/top#">Ahmednagar</a></div><div class="people"><a href="http://localhost:3000/top#">Aizawl</a></div><div class="people"><a href="http://localhost:3000/top#">Ajmer</a></div><div class="people"><a href="http://localhost:3000/top#">Akola</a></div><div class="people"><a href="http://localhost:3000/top#">Alappuzha</a></div><div class="people"><a href="http://localhost:3000/top#">Aligarh</a></div><div class="people"><a href="http://localhost:3000/top#">Alipurduar</a></div><div class="people"><a href="http://localhost:3000/top#">Allahabad</a></div><div class="people"><a href="http://localhost:3000/top#">Almora</a></div><div class="people"><a href="http://localhost:3000/top#">Alwar</a></div><div class="people"><a href="http://localhost:3000/top#">Amalapuram</a></div><div class="people"><a href="http://localhost:3000/top#">Ambajogai</a></div><div class="people"><a href="http://localhost:3000/top#">Ambala</a></div><div class="people"><a href="http://localhost:3000/top#">Ambejogai</a></div><div class="people"><a href="http://localhost:3000/top#">Ambikapur</a></div><div class="people"><a href="http://localhost:3000/top#">Ambur</a></div><div class="people"><a href="http://localhost:3000/top#">Amravati</a></div><div class="people"><a href="http://localhost:3000/top#">Amreli</a></div><div class="people"><a href="http://localhost:3000/top#">Amritsar</a></div><div class="people"><a href="http://localhost:3000/top#">Anand</a></div><div class="people"><a href="http://localhost:3000/top#">Anantapur</a></div><div class="people"><a href="http://localhost:3000/top#">Angul</a></div><div class="people"><a href="http://localhost:3000/top#">Anjar</a></div><div class="people"><a href="http://localhost:3000/top#">Ankleshwar</a></div><div class="people"><a href="http://localhost:3000/top#">Arakkonam</a></div><div class="people"><a href="http://localhost:3000/top#">Arambagh</a></div><div class="people"><a href="http://localhost:3000/top#">Araria</a></div><div class="people"><a href="http://localhost:3000/top#">Arrah</a></div><div class="people"><a href="http://localhost:3000/top#">Aruppukottai</a></div><div class="people"><a href="http://localhost:3000/top#">Asansol</a></div><div class="people"><a href="http://localhost:3000/top#">Aurangabad</a></div><div class="people"><a href="http://localhost:3000/top#">Aurangabad_bihar</a></div><div class="people"><a href="http://localhost:3000/top#">Azamgarh</a></div><div class="people"><a href="http://localhost:3000/top#">Baddi</a></div><div class="people"><a href="http://localhost:3000/top#">Bagalkot</a></div><div class="people"><a href="http://localhost:3000/top#">Bagdogra</a></div><div class="people"><a href="http://localhost:3000/top#">Bagula</a></div><div class="people"><a href="http://localhost:3000/top#">Bahadurgarh</a></div><div class="people"><a href="http://localhost:3000/top#">Bahraich</a></div><div class="people"><a href="http://localhost:3000/top#">Balaghat</a></div><div class="people"><a href="http://localhost:3000/top#">Balangir</a></div><div class="people"><a href="http://localhost:3000/top#">Balasore</a></div><div class="people"><a href="http://localhost:3000/top#">Ballari</a></div><div class="people"><a href="http://localhost:3000/top#">Ballia</a></div><div class="people"><a href="http://localhost:3000/top#">Balrampur</a></div><div class="people"><a href="http://localhost:3000/top#">Balurghat</a></div><div class="people"><a href="http://localhost:3000/top#">Banda</a></div><div class="people"><a href="http://localhost:3000/top#">Bangalore</a></div><div class="people"><a href="http://localhost:3000/top#">Bankabihar</a></div><div class="people"><a href="http://localhost:3000/top#">Bankura</a></div><div class="people"><a href="http://localhost:3000/top#">Bantwal</a></div><div class="people"><a href="http://localhost:3000/top#">Bapatlachirala</a></div><div class="people"><a href="http://localhost:3000/top#">Baramati</a></div><div class="people"><a href="http://localhost:3000/top#">Baran</a></div><div class="people"><a href="http://localhost:3000/top#">Baraut</a></div><div class="people"><a href="http://localhost:3000/top#">Baraut-3</a></div><div class="people"><a href="http://localhost:3000/top#">Bardhaman</a></div><div class="people"><a href="http://localhost:3000/top#">Bardoli</a></div><div class="people"><a href="http://localhost:3000/top#">Bareilly</a></div><div class="people"><a href="http://localhost:3000/top#">Barh</a></div><div class="people"><a href="http://localhost:3000/top#">Baripada</a></div><div class="people"><a href="http://localhost:3000/top#">Barmer</a></div><div class="people"><a href="http://localhost:3000/top#">Barnala</a></div><div class="people"><a href="http://localhost:3000/top#">Barshi</a></div><div class="people"><a href="http://localhost:3000/top#">Basirhat</a></div><div class="people"><a href="http://localhost:3000/top#">Basti</a></div><div class="people"><a href="http://localhost:3000/top#">Batala</a></div><div class="people"><a href="http://localhost:3000/top#">Bathinda</a></div><div class="people"><a href="http://localhost:3000/top#">Beawar</a></div><div class="people"><a href="http://localhost:3000/top#">Beed</a></div><div class="people"><a href="http://localhost:3000/top#">Begusarai</a></div><div class="people"><a href="http://localhost:3000/top#">Bela-Pratapgarh</a></div><div class="people"><a href="http://localhost:3000/top#">Belgaum</a></div><div class="people"><a href="http://localhost:3000/top#">Berhampore</a></div><div class="people"><a href="http://localhost:3000/top#">Berhampur</a></div><div class="people"><a href="http://localhost:3000/top#">Bettiah</a></div><div class="people"><a href="http://localhost:3000/top#">Betul</a></div><div class="people"><a href="http://localhost:3000/top#">Bhadohi</a></div><div class="people"><a href="http://localhost:3000/top#">Bhadrachalam</a></div><div class="people"><a href="http://localhost:3000/top#">Bhadrak</a></div><div class="people"><a href="http://localhost:3000/top#">Bhadravathi</a></div><div class="people"><a href="http://localhost:3000/top#">Bhadravati</a></div><div class="people"><a href="http://localhost:3000/top#">Bhagalpur</a></div><div class="people"><a href="http://localhost:3000/top#">Bhandara</a></div><div class="people"><a href="http://localhost:3000/top#">Bharabanki</a></div><div class="people"><a href="http://localhost:3000/top#">Bharatpur</a></div><div class="people"><a href="http://localhost:3000/top#">Bharuch</a></div><div class="people"><a href="http://localhost:3000/top#">Bhatkal</a></div><div class="people"><a href="http://localhost:3000/top#">Bhavnagar</a></div><div class="people"><a href="http://localhost:3000/top#">Bhawanipatna</a></div><div class="people"><a href="http://localhost:3000/top#">Bhilai</a></div><div class="people"><a href="http://localhost:3000/top#">Bhilwara</a></div><div class="people"><a href="http://localhost:3000/top#">Bhimavaram</a></div><div class="people"><a href="http://localhost:3000/top#">Bhind</a></div><div class="people"><a href="http://localhost:3000/top#">Bhiwadi</a></div><div class="people"><a href="http://localhost:3000/top#">Bhiwani</a></div><div class="people"><a href="http://localhost:3000/top#">Bhopal</a></div><div class="people"><a href="http://localhost:3000/top#">Bhubaneswar</a></div><div class="people"><a href="http://localhost:3000/top#">Bhuj</a></div><div class="people"><a href="http://localhost:3000/top#">Bhusawal</a></div><div class="people"><a href="http://localhost:3000/top#">Bidar</a></div><div class="people"><a href="http://localhost:3000/top#">Biharsharif</a></div><div class="people"><a href="http://localhost:3000/top#">Bijapur</a></div><div class="people"><a href="http://localhost:3000/top#">Bijnor</a></div><div class="people"><a href="http://localhost:3000/top#">Bikaner</a></div><div class="people"><a href="http://localhost:3000/top#">Bilaspur</a></div><div class="people"><a href="http://localhost:3000/top#">Bilaspur-Hp</a></div><div class="people"><a href="http://localhost:3000/top#">Bilimora</a></div><div class="people"><a href="http://localhost:3000/top#">Biswanath-Chariali</a></div><div class="people"><a href="http://localhost:3000/top#">Bodhan-Rural</a></div><div class="people"><a href="http://localhost:3000/top#">Bodinayakanur</a></div><div class="people"><a href="http://localhost:3000/top#">Boisar</a></div><div class="people"><a href="http://localhost:3000/top#">Bokaro</a></div><div class="people"><a href="http://localhost:3000/top#">Bolpur</a></div><div class="people"><a href="http://localhost:3000/top#">Bongaigaon</a></div><div class="people"><a href="http://localhost:3000/top#">Bongaon</a></div><div class="people"><a href="http://localhost:3000/top#">Budaun</a></div><div class="people"><a href="http://localhost:3000/top#">Budhwal</a></div><div class="people"><a href="http://localhost:3000/top#">Bulandshahr</a></div><div class="people"><a href="http://localhost:3000/top#">Buldana</a></div><div class="people"><a href="http://localhost:3000/top#">Bundi</a></div><div class="people"><a href="http://localhost:3000/top#">Burhanpur</a></div><div class="people"><a href="http://localhost:3000/top#">Buxar</a></div><div class="people"><a href="http://localhost:3000/top#">Central-Goa</a></div><div class="people"><a href="http://localhost:3000/top#">Chaibasa</a></div><div class="people"><a href="http://localhost:3000/top#">Chakdaha</a></div><div class="people"><a href="http://localhost:3000/top#">Chalakkudy</a></div><div class="people"><a href="http://localhost:3000/top#">Chalisgaon</a></div><div class="people"><a href="http://localhost:3000/top#">Chandausi</a></div><div class="people"><a href="http://localhost:3000/top#">Chandigarh</a></div><div class="people"><a href="http://localhost:3000/top#">Chandrapur</a></div><div class="people"><a href="http://localhost:3000/top#">Changanassery</a></div><div class="people"><a href="http://localhost:3000/top#">Chengannur</a></div><div class="people"><a href="http://localhost:3000/top#">Chennai</a></div><div class="people"><a href="http://localhost:3000/top#">Chhapra</a></div><div class="people"><a href="http://localhost:3000/top#">Chhatarpur</a></div><div class="people"><a href="http://localhost:3000/top#">Chhindwara</a></div><div class="people"><a href="http://localhost:3000/top#">Chidambaram</a></div><div class="people"><a href="http://localhost:3000/top#">Chikhli</a></div><div class="people"><a href="http://localhost:3000/top#">Chikkaballapur</a></div><div class="people"><a href="http://localhost:3000/top#">Chikmagalur</a></div><div class="people"><a href="http://localhost:3000/top#">Chiplun_only_dominos</a></div><div class="people"><a href="http://localhost:3000/top#">Chitradurga</a></div><div class="people"><a href="http://localhost:3000/top#">Chittoor</a></div><div class="people"><a href="http://localhost:3000/top#">Chittorgarh</a></div><div class="people"><a href="http://localhost:3000/top#">Churu</a></div><div class="people"><a href="http://localhost:3000/top#">Coimbatore</a></div><div class="people"><a href="http://localhost:3000/top#">Cooch-Behar</a></div><div class="people"><a href="http://localhost:3000/top#">Cuddalore</a></div><div class="people"><a href="http://localhost:3000/top#">Cuttack</a></div><div class="people"><a href="http://localhost:3000/top#">Dahanu</a></div><div class="people"><a href="http://localhost:3000/top#">Dahod</a></div><div class="people"><a href="http://localhost:3000/top#">Daltonganj</a></div><div class="people"><a href="http://localhost:3000/top#">Daman</a></div><div class="people"><a href="http://localhost:3000/top#">Darbhanga</a></div><div class="people"><a href="http://localhost:3000/top#">Darjeeling</a></div><div class="people"><a href="http://localhost:3000/top#">Dasuya</a></div><div class="people"><a href="http://localhost:3000/top#">Daund</a></div><div class="people"><a href="http://localhost:3000/top#">Dausa</a></div><div class="people"><a href="http://localhost:3000/top#">Davanagere</a></div><div class="people"><a href="http://localhost:3000/top#">Dehradun</a></div><div class="people"><a href="http://localhost:3000/top#">Dehri</a></div><div class="people"><a href="http://localhost:3000/top#">Delhi</a></div><div class="people"><a href="http://localhost:3000/top#">Deoghar</a></div><div class="people"><a href="http://localhost:3000/top#">Deoria</a></div><div class="people"><a href="http://localhost:3000/top#">Dewas</a></div><div class="people"><a href="http://localhost:3000/top#">Dhanbad</a></div><div class="people"><a href="http://localhost:3000/top#">Dhar</a></div><div class="people"><a href="http://localhost:3000/top#">Dharamshala</a></div><div class="people"><a href="http://localhost:3000/top#">Dharapuram</a></div><div class="people"><a href="http://localhost:3000/top#">Dharmapuri</a></div><div class="people"><a href="http://localhost:3000/top#">Dharwad</a></div><div class="people"><a href="http://localhost:3000/top#">Dholpur</a></div><div class="people"><a href="http://localhost:3000/top#">Dhule</a></div><div class="people"><a href="http://localhost:3000/top#">Dhuri</a></div><div class="people"><a href="http://localhost:3000/top#">Dibrugarh</a></div><div class="people"><a href="http://localhost:3000/top#">Digboi</a></div><div class="people"><a href="http://localhost:3000/top#">Dimapur</a></div><div class="people"><a href="http://localhost:3000/top#">Dindigul</a></div><div class="people"><a href="http://localhost:3000/top#">Diu</a></div><div class="people"><a href="http://localhost:3000/top#">Doddaballapura</a></div><div class="people"><a href="http://localhost:3000/top#">Duliajan</a></div><div class="people"><a href="http://localhost:3000/top#">Dumka</a></div><div class="people"><a href="http://localhost:3000/top#">Dungarpur</a></div><div class="people"><a href="http://localhost:3000/top#">Durgapur</a></div><div class="people"><a href="http://localhost:3000/top#">Dwarka</a></div><div class="people"><a href="http://localhost:3000/top#">Eluru</a></div><div class="people"><a href="http://localhost:3000/top#">Erode</a></div><div class="people"><a href="http://localhost:3000/top#">Etah</a></div><div class="people"><a href="http://localhost:3000/top#">Etawah</a></div><div class="people"><a href="http://localhost:3000/top#">Faizabad</a></div><div class="people"><a href="http://localhost:3000/top#">Faridabad</a></div><div class="people"><a href="http://localhost:3000/top#">Faridkot</a></div><div class="people"><a href="http://localhost:3000/top#">Farrukhabad</a></div><div class="people"><a href="http://localhost:3000/top#">Fatehabad</a></div><div class="people"><a href="http://localhost:3000/top#">Fatehgarh-Sahib</a></div><div class="people"><a href="http://localhost:3000/top#">Fatehpur</a></div><div class="people"><a href="http://localhost:3000/top#">Fazilka</a></div><div class="people"><a href="http://localhost:3000/top#">Firozabad</a></div><div class="people"><a href="http://localhost:3000/top#">Firozpur</a></div><div class="people"><a href="http://localhost:3000/top#">Gadag-Betigeri</a></div><div class="people"><a href="http://localhost:3000/top#">Gadwal</a></div><div class="people"><a href="http://localhost:3000/top#">Gandhidham</a></div><div class="people"><a href="http://localhost:3000/top#">Gangapur-City</a></div><div class="people"><a href="http://localhost:3000/top#">Gangarampur</a></div><div class="people"><a href="http://localhost:3000/top#">Gangtok</a></div><div class="people"><a href="http://localhost:3000/top#">Gauriganj</a></div><div class="people"><a href="http://localhost:3000/top#">Gaya</a></div><div class="people"><a href="http://localhost:3000/top#">Ghazipur</a></div><div class="people"><a href="http://localhost:3000/top#">Giridih</a></div><div class="people"><a href="http://localhost:3000/top#">Godhra</a></div><div class="people"><a href="http://localhost:3000/top#">Gokak</a></div><div class="people"><a href="http://localhost:3000/top#">Golaghat</a></div><div class="people"><a href="http://localhost:3000/top#">Gonda</a></div><div class="people"><a href="http://localhost:3000/top#">Gondal</a></div><div class="people"><a href="http://localhost:3000/top#">Gondia</a></div><div class="people"><a href="http://localhost:3000/top#">Gopalganj</a></div><div class="people"><a href="http://localhost:3000/top#">Gorakhpur</a></div><div class="people"><a href="http://localhost:3000/top#">Gudivada</a></div><div class="people"><a href="http://localhost:3000/top#">Gudur</a></div><div class="people"><a href="http://localhost:3000/top#">Guna</a></div><div class="people"><a href="http://localhost:3000/top#">Guntakal</a></div><div class="people"><a href="http://localhost:3000/top#">Guntur</a></div><div class="people"><a href="http://localhost:3000/top#">Gurdaspur</a></div><div class="people"><a href="http://localhost:3000/top#">Gurgaon</a></div><div class="people"><a href="http://localhost:3000/top#">Guwahati</a></div><div class="people"><a href="http://localhost:3000/top#">Gwalior</a></div><div class="people"><a href="http://localhost:3000/top#">Habra</a></div><div class="people"><a href="http://localhost:3000/top#">Hajipur</a></div><div class="people"><a href="http://localhost:3000/top#">Haldia</a></div><div class="people"><a href="http://localhost:3000/top#">Haldwani</a></div><div class="people"><a href="http://localhost:3000/top#">Halol</a></div><div class="people"><a href="http://localhost:3000/top#">Hamirpur</a></div><div class="people"><a href="http://localhost:3000/top#">Hampi</a></div><div class="people"><a href="http://localhost:3000/top#">Hansi</a></div><div class="people"><a href="http://localhost:3000/top#">Hanumangarh</a></div><div class="people"><a href="http://localhost:3000/top#">Hapur</a></div><div class="people"><a href="http://localhost:3000/top#">Hardoi</a></div><div class="people"><a href="http://localhost:3000/top#">Haridwar</a></div><div class="people"><a href="http://localhost:3000/top#">Hassan</a></div><div class="people"><a href="http://localhost:3000/top#">Hathras</a></div><div class="people"><a href="http://localhost:3000/top#">Haveri</a></div><div class="people"><a href="http://localhost:3000/top#">Himmatnagar</a></div><div class="people"><a href="http://localhost:3000/top#">Hisar</a></div><div class="people"><a href="http://localhost:3000/top#">Hojai</a></div><div class="people"><a href="http://localhost:3000/top#">Hoshangabad</a></div><div class="people"><a href="http://localhost:3000/top#">Hoshiarpur</a></div><div class="people"><a href="http://localhost:3000/top#">Hospet</a></div><div class="people"><a href="http://localhost:3000/top#">Hosur</a></div><div class="people"><a href="http://localhost:3000/top#">Hubli</a></div><div class="people"><a href="http://localhost:3000/top#">Hyderabad</a></div><div class="people"><a href="http://localhost:3000/top#">Ichalkaranji</a></div><div class="people"><a href="http://localhost:3000/top#">Idukki</a></div><div class="people"><a href="http://localhost:3000/top#">Imphal</a></div><div class="people"><a href="http://localhost:3000/top#">Indore</a></div><div class="people"><a href="http://localhost:3000/top#">Irinjalakuda</a></div><div class="people"><a href="http://localhost:3000/top#">Islampur</a></div><div class="people"><a href="http://localhost:3000/top#">Itanagar</a></div><div class="people"><a href="http://localhost:3000/top#">Itarsi</a></div><div class="people"><a href="http://localhost:3000/top#">Jabalpur</a></div><div class="people"><a href="http://localhost:3000/top#">Jagdalpur</a></div><div class="people"><a href="http://localhost:3000/top#">Jagraon</a></div><div class="people"><a href="http://localhost:3000/top#">Jagtial</a></div><div class="people"><a href="http://localhost:3000/top#">Jahanabad</a></div><div class="people"><a href="http://localhost:3000/top#">Jaigaon</a></div><div class="people"><a href="http://localhost:3000/top#">Jaipur</a></div><div class="people"><a href="http://localhost:3000/top#">Jalandhar</a></div><div class="people"><a href="http://localhost:3000/top#">Jalgaon</a></div><div class="people"><a href="http://localhost:3000/top#">Jalna</a></div><div class="people"><a href="http://localhost:3000/top#">Jalpaiguri</a></div><div class="people"><a href="http://localhost:3000/top#">Jammu</a></div><div class="people"><a href="http://localhost:3000/top#">Jamnagar</a></div><div class="people"><a href="http://localhost:3000/top#">Jamshedpur</a></div><div class="people"><a href="http://localhost:3000/top#">Jamui</a></div><div class="people"><a href="http://localhost:3000/top#">Jangipur</a></div><div class="people"><a href="http://localhost:3000/top#">Jaunpur</a></div><div class="people"><a href="http://localhost:3000/top#">Jeypore</a></div><div class="people"><a href="http://localhost:3000/top#">Jhalawar</a></div><div class="people"><a href="http://localhost:3000/top#">Jhansi</a></div><div class="people"><a href="http://localhost:3000/top#">Jhargram</a></div><div class="people"><a href="http://localhost:3000/top#">Jharsuguda</a></div><div class="people"><a href="http://localhost:3000/top#">Jhunjhunu</a></div><div class="people"><a href="http://localhost:3000/top#">Jind</a></div><div class="people"><a href="http://localhost:3000/top#">Jjajjar</a></div><div class="people"><a href="http://localhost:3000/top#">Jodhpur</a></div><div class="people"><a href="http://localhost:3000/top#">Jorhat</a></div><div class="people"><a href="http://localhost:3000/top#">Junagadh</a></div><div class="people"><a href="http://localhost:3000/top#">Kadapa</a></div><div class="people"><a href="http://localhost:3000/top#">Kadayanallur</a></div><div class="people"><a href="http://localhost:3000/top#">Kadi</a></div><div class="people"><a href="http://localhost:3000/top#">Kadiri</a></div><div class="people"><a href="http://localhost:3000/top#">Kaithal</a></div><div class="people"><a href="http://localhost:3000/top#">Kakinada</a></div><div class="people"><a href="http://localhost:3000/top#">Kalaburagi</a></div><div class="people"><a href="http://localhost:3000/top#">Kalady</a></div><div class="people"><a href="http://localhost:3000/top#">Kalimpong</a></div><div class="people"><a href="http://localhost:3000/top#">Kallakurichi</a></div><div class="people"><a href="http://localhost:3000/top#">Kallakurichi-2</a></div><div class="people"><a href="http://localhost:3000/top#">Kalna</a></div><div class="people"><a href="http://localhost:3000/top#">Kamareddy</a></div><div class="people"><a href="http://localhost:3000/top#">Kanchrapara</a></div><div class="people"><a href="http://localhost:3000/top#">Kannauj</a></div><div class="people"><a href="http://localhost:3000/top#">Kannur</a></div><div class="people"><a href="http://localhost:3000/top#">Kanpur</a></div><div class="people"><a href="http://localhost:3000/top#">Kanyakumari</a></div><div class="people"><a href="http://localhost:3000/top#">Kapurthala</a></div><div class="people"><a href="http://localhost:3000/top#">Karad</a></div><div class="people"><a href="http://localhost:3000/top#">Karaikal</a></div><div class="people"><a href="http://localhost:3000/top#">Karaikal_do_not_use</a></div><div class="people"><a href="http://localhost:3000/top#">Karaikkudi</a></div><div class="people"><a href="http://localhost:3000/top#">Karimnagar</a></div><div class="people"><a href="http://localhost:3000/top#">Karjat</a></div><div class="people"><a href="http://localhost:3000/top#">Karnal</a></div><div class="people"><a href="http://localhost:3000/top#">Karunagappaly</a></div><div class="people"><a href="http://localhost:3000/top#">Karur</a></div><div class="people"><a href="http://localhost:3000/top#">Karwar</a></div><div class="people"><a href="http://localhost:3000/top#">Kasaragod</a></div><div class="people"><a href="http://localhost:3000/top#">Kashipur</a></div><div class="people"><a href="http://localhost:3000/top#">Katihar</a></div><div class="people"><a href="http://localhost:3000/top#">Katni</a></div><div class="people"><a href="http://localhost:3000/top#">Kavali</a></div><div class="people"><a href="http://localhost:3000/top#">Kayamkulam</a></div><div class="people"><a href="http://localhost:3000/top#">Kendrapada</a></div><div class="people"><a href="http://localhost:3000/top#">Kendujhar</a></div><div class="people"><a href="http://localhost:3000/top#">Khagaria</a></div><div class="people"><a href="http://localhost:3000/top#">Khalilabad</a></div><div class="people"><a href="http://localhost:3000/top#">Khamgaon</a></div><div class="people"><a href="http://localhost:3000/top#">Khammam</a></div><div class="people"><a href="http://localhost:3000/top#">Khandwa</a></div><div class="people"><a href="http://localhost:3000/top#">Khanna</a></div><div class="people"><a href="http://localhost:3000/top#">Kharagpur</a></div><div class="people"><a href="http://localhost:3000/top#">Khatauli-2</a></div><div class="people"><a href="http://localhost:3000/top#">Khopoli</a></div><div class="people"><a href="http://localhost:3000/top#">Kishanganj</a></div><div class="people"><a href="http://localhost:3000/top#">Kishangarh</a></div><div class="people"><a href="http://localhost:3000/top#">Kochi</a></div><div class="people"><a href="http://localhost:3000/top#">Kodaikanal</a></div><div class="people"><a href="http://localhost:3000/top#">Kohima</a></div><div class="people"><a href="http://localhost:3000/top#">Kokrajhar</a></div><div class="people"><a href="http://localhost:3000/top#">Kolar</a></div><div class="people"><a href="http://localhost:3000/top#">Kolhapur</a></div><div class="people"><a href="http://localhost:3000/top#">Kolkata</a></div><div class="people"><a href="http://localhost:3000/top#">Kollam</a></div><div class="people"><a href="http://localhost:3000/top#">Koppal</a></div><div class="people"><a href="http://localhost:3000/top#">Korba</a></div><div class="people"><a href="http://localhost:3000/top#">Kota</a></div><div class="people"><a href="http://localhost:3000/top#">Kotdwar</a></div><div class="people"><a href="http://localhost:3000/top#">Kothagudem</a></div><div class="people"><a href="http://localhost:3000/top#">Kothamanagalam</a></div><div class="people"><a href="http://localhost:3000/top#">Kottakkal</a></div><div class="people"><a href="http://localhost:3000/top#">Kottarakkara</a></div><div class="people"><a href="http://localhost:3000/top#">Kottayam</a></div><div class="people"><a href="http://localhost:3000/top#">Kovilpatti</a></div><div class="people"><a href="http://localhost:3000/top#">Kozhikode</a></div><div class="people"><a href="http://localhost:3000/top#">Krishnagiri</a></div><div class="people"><a href="http://localhost:3000/top#">Krishnanagar</a></div><div class="people"><a href="http://localhost:3000/top#">Kullu</a></div><div class="people"><a href="http://localhost:3000/top#">Kumarakom</a></div><div class="people"><a href="http://localhost:3000/top#">Kumbakonam</a></div><div class="people"><a href="http://localhost:3000/top#">Kundapura</a></div><div class="people"><a href="http://localhost:3000/top#">Kunnamkullam</a></div><div class="people"><a href="http://localhost:3000/top#">Kurnool</a></div><div class="people"><a href="http://localhost:3000/top#">Kurukshetra</a></div><div class="people"><a href="http://localhost:3000/top#">Kushalnagar</a></div><div class="people"><a href="http://localhost:3000/top#">Lakhimpur</a></div><div class="people"><a href="http://localhost:3000/top#">Lalitpur</a></div><div class="people"><a href="http://localhost:3000/top#">Latur</a></div><div class="people"><a href="http://localhost:3000/top#">Lonavala</a></div><div class="people"><a href="http://localhost:3000/top#">Lonavla</a></div><div class="people"><a href="http://localhost:3000/top#">Lpu-Phagwara</a></div><div class="people"><a href="http://localhost:3000/top#">Lucknow</a></div><div class="people"><a href="http://localhost:3000/top#">Ludhiana</a></div><div class="people"><a href="http://localhost:3000/top#">Machilipatnam</a></div><div class="people"><a href="http://localhost:3000/top#">Madanapalle</a></div><div class="people"><a href="http://localhost:3000/top#">Madhubani</a></div><div class="people"><a href="http://localhost:3000/top#">Madikeri</a></div><div class="people"><a href="http://localhost:3000/top#">Madurai</a></div><div class="people"><a href="http://localhost:3000/top#">Mahabaleshwar</a></div><div class="people"><a href="http://localhost:3000/top#">Maharajganj-2</a></div><div class="people"><a href="http://localhost:3000/top#">Mahbubnagar</a></div><div class="people"><a href="http://localhost:3000/top#">Mahoba</a></div><div class="people"><a href="http://localhost:3000/top#">Mainpuri</a></div><div class="people"><a href="http://localhost:3000/top#">Malappuram</a></div><div class="people"><a href="http://localhost:3000/top#">Malda</a></div><div class="people"><a href="http://localhost:3000/top#">Malegaon</a></div><div class="people"><a href="http://localhost:3000/top#">Malout</a></div><div class="people"><a href="http://localhost:3000/top#">Manali</a></div><div class="people"><a href="http://localhost:3000/top#">Mancherial</a></div><div class="people"><a href="http://localhost:3000/top#">Mandapeta</a></div><div class="people"><a href="http://localhost:3000/top#">Mandi-Dabwali</a></div><div class="people"><a href="http://localhost:3000/top#">Mandi-Gobindgarh</a></div><div class="people"><a href="http://localhost:3000/top#">Mandi-Hp</a></div><div class="people"><a href="http://localhost:3000/top#">Mandsaur</a></div><div class="people"><a href="http://localhost:3000/top#">Mandya</a></div><div class="people"><a href="http://localhost:3000/top#">Mangaluru</a></div><div class="people"><a href="http://localhost:3000/top#">Manipal</a></div><div class="people"><a href="http://localhost:3000/top#">Manjeri</a></div><div class="people"><a href="http://localhost:3000/top#">Mannargudi</a></div><div class="people"><a href="http://localhost:3000/top#">Mansa</a></div><div class="people"><a href="http://localhost:3000/top#">Markapur</a></div><div class="people"><a href="http://localhost:3000/top#">Mathura</a></div><div class="people"><a href="http://localhost:3000/top#">Maunath-Bhanjan</a></div><div class="people"><a href="http://localhost:3000/top#">Mayiladuthurai</a></div><div class="people"><a href="http://localhost:3000/top#">Medinipur</a></div><div class="people"><a href="http://localhost:3000/top#">Meerut</a></div><div class="people"><a href="http://localhost:3000/top#">Mehsana</a></div><div class="people"><a href="http://localhost:3000/top#">Mettupalayam</a></div><div class="people"><a href="http://localhost:3000/top#">Miryalaguda</a></div><div class="people"><a href="http://localhost:3000/top#">Mirzapur</a></div><div class="people"><a href="http://localhost:3000/top#">Modinagar</a></div><div class="people"><a href="http://localhost:3000/top#">Moga</a></div><div class="people"><a href="http://localhost:3000/top#">Moodbidri</a></div><div class="people"><a href="http://localhost:3000/top#">Moradabad</a></div><div class="people"><a href="http://localhost:3000/top#">Morbi</a></div><div class="people"><a href="http://localhost:3000/top#">Morena</a></div><div class="people"><a href="http://localhost:3000/top#">Motihari</a></div><div class="people"><a href="http://localhost:3000/top#">Mount-Abu_only_dominos</a></div><div class="people"><a href="http://localhost:3000/top#">Mughalsarai</a></div><div class="people"><a href="http://localhost:3000/top#">Mukerian</a></div><div class="people"><a href="http://localhost:3000/top#">Muktsar</a></div><div class="people"><a href="http://localhost:3000/top#">Mumbai</a></div><div class="people"><a href="http://localhost:3000/top#">Munger</a></div><div class="people"><a href="http://localhost:3000/top#">Mussoorie</a></div><div class="people"><a href="http://localhost:3000/top#">Muvattupuzha</a></div><div class="people"><a href="http://localhost:3000/top#">Muzaffarnagar</a></div><div class="people"><a href="http://localhost:3000/top#">Muzaffarpur</a></div><div class="people"><a href="http://localhost:3000/top#">Mysore</a></div><div class="people"><a href="http://localhost:3000/top#">Nabadwip</a></div><div class="people"><a href="http://localhost:3000/top#">Nabha</a></div><div class="people"><a href="http://localhost:3000/top#">Nadiad</a></div><div class="people"><a href="http://localhost:3000/top#">Nagaon</a></div><div class="people"><a href="http://localhost:3000/top#">Nagapattinam</a></div><div class="people"><a href="http://localhost:3000/top#">Nagda</a></div><div class="people"><a href="http://localhost:3000/top#">Nagercoil</a></div><div class="people"><a href="http://localhost:3000/top#">Nagpur</a></div><div class="people"><a href="http://localhost:3000/top#">Naharlagun</a></div><div class="people"><a href="http://localhost:3000/top#">Nainital</a></div><div class="people"><a href="http://localhost:3000/top#">Nakodar</a></div><div class="people"><a href="http://localhost:3000/top#">Nalbari</a></div><div class="people"><a href="http://localhost:3000/top#">Nalgonda</a></div><div class="people"><a href="http://localhost:3000/top#">Namakkal</a></div><div class="people"><a href="http://localhost:3000/top#">Nanded</a></div><div class="people"><a href="http://localhost:3000/top#">Nandurbar</a></div><div class="people"><a href="http://localhost:3000/top#">Nandyal</a></div><div class="people"><a href="http://localhost:3000/top#">Nangal</a></div><div class="people"><a href="http://localhost:3000/top#">Naraingarh</a></div><div class="people"><a href="http://localhost:3000/top#">Narasaraopet</a></div><div class="people"><a href="http://localhost:3000/top#">Narnaul</a></div><div class="people"><a href="http://localhost:3000/top#">Narsinghpur</a></div><div class="people"><a href="http://localhost:3000/top#">Narsipatnam</a></div><div class="people"><a href="http://localhost:3000/top#">Nashik</a></div><div class="people"><a href="http://localhost:3000/top#">Navsari</a></div><div class="people"><a href="http://localhost:3000/top#">Nawanshahr</a></div><div class="people"><a href="http://localhost:3000/top#">Neemuch</a></div><div class="people"><a href="http://localhost:3000/top#">Nellore</a></div><div class="people"><a href="http://localhost:3000/top#">Neyveli</a></div><div class="people"><a href="http://localhost:3000/top#">Nirmal</a></div><div class="people"><a href="http://localhost:3000/top#">Nizamabad</a></div><div class="people"><a href="http://localhost:3000/top#">Noida</a></div><div class="people"><a href="http://localhost:3000/top#">Noida-1</a></div><div class="people"><a href="http://localhost:3000/top#">North-Lakhimpur</a></div><div class="people"><a href="http://localhost:3000/top#">Ongole</a></div><div class="people"><a href="http://localhost:3000/top#">Ooty</a></div><div class="people"><a href="http://localhost:3000/top#">Orai</a></div><div class="people"><a href="http://localhost:3000/top#">Osmanabad</a></div><div class="people"><a href="http://localhost:3000/top#">Pala</a></div><div class="people"><a href="http://localhost:3000/top#">Palakkad</a></div><div class="people"><a href="http://localhost:3000/top#">Palakollu</a></div><div class="people"><a href="http://localhost:3000/top#">Palampur</a></div><div class="people"><a href="http://localhost:3000/top#">Palani</a></div><div class="people"><a href="http://localhost:3000/top#">Palanpur</a></div><div class="people"><a href="http://localhost:3000/top#">Palghar</a></div><div class="people"><a href="http://localhost:3000/top#">Pali</a></div><div class="people"><a href="http://localhost:3000/top#">Palwal</a></div><div class="people"><a href="http://localhost:3000/top#">Panchgani</a></div><div class="people"><a href="http://localhost:3000/top#">Panipat</a></div><div class="people"><a href="http://localhost:3000/top#">Paradeep</a></div><div class="people"><a href="http://localhost:3000/top#">Paramakudi</a></div><div class="people"><a href="http://localhost:3000/top#">Parbhani</a></div><div class="people"><a href="http://localhost:3000/top#">Parvathipuram</a></div><div class="people"><a href="http://localhost:3000/top#">Pathankot</a></div><div class="people"><a href="http://localhost:3000/top#">Patiala</a></div><div class="people"><a href="http://localhost:3000/top#">Patna</a></div><div class="people"><a href="http://localhost:3000/top#">Pattukkottai</a></div><div class="people"><a href="http://localhost:3000/top#">Payyannur</a></div><div class="people"><a href="http://localhost:3000/top#">Perambalur</a></div><div class="people"><a href="http://localhost:3000/top#">Perinthalmanna</a></div><div class="people"><a href="http://localhost:3000/top#">Phagwara</a></div><div class="people"><a href="http://localhost:3000/top#">Pilani</a></div><div class="people"><a href="http://localhost:3000/top#">Piler</a></div><div class="people"><a href="http://localhost:3000/top#">Pilibhit</a></div><div class="people"><a href="http://localhost:3000/top#">Pilkhuwa</a></div><div class="people"><a href="http://localhost:3000/top#">Pinjore-City</a></div><div class="people"><a href="http://localhost:3000/top#">Pondicherry</a></div><div class="people"><a href="http://localhost:3000/top#">Porbandar</a></div><div class="people"><a href="http://localhost:3000/top#">Port-Blair</a></div><div class="people"><a href="http://localhost:3000/top#">Pratapgarh</a></div><div class="people"><a href="http://localhost:3000/top#">Proddatur</a></div><div class="people"><a href="http://localhost:3000/top#">Pudukkottai</a></div><div class="people"><a href="http://localhost:3000/top#">Pune</a></div><div class="people"><a href="http://localhost:3000/top#">Puri</a></div><div class="people"><a href="http://localhost:3000/top#">Purnea</a></div><div class="people"><a href="http://localhost:3000/top#">Purulia</a></div><div class="people"><a href="http://localhost:3000/top#">Pusad</a></div><div class="people"><a href="http://localhost:3000/top#">Puttur</a></div><div class="people"><a href="http://localhost:3000/top#">Puttur-Karnataka</a></div><div class="people"><a href="http://localhost:3000/top#">Rae-Bareli</a></div><div class="people"><a href="http://localhost:3000/top#">Raghunathpur</a></div><div class="people"><a href="http://localhost:3000/top#">Raichur</a></div><div class="people"><a href="http://localhost:3000/top#">Raiganj</a></div><div class="people"><a href="http://localhost:3000/top#">Raigarh</a></div><div class="people"><a href="http://localhost:3000/top#">Raipur</a></div><div class="people"><a href="http://localhost:3000/top#">Rajahmundry</a></div><div class="people"><a href="http://localhost:3000/top#">Rajampet</a></div><div class="people"><a href="http://localhost:3000/top#">Rajapalayam</a></div><div class="people"><a href="http://localhost:3000/top#">Rajgarh</a></div><div class="people"><a href="http://localhost:3000/top#">Rajkot</a></div><div class="people"><a href="http://localhost:3000/top#">Rajnandgaon</a></div><div class="people"><a href="http://localhost:3000/top#">Rajsamand</a></div><div class="people"><a href="http://localhost:3000/top#">Ramachandrapuram</a></div><div class="people"><a href="http://localhost:3000/top#">Ramagundam</a></div><div class="people"><a href="http://localhost:3000/top#">Ramanagara</a></div><div class="people"><a href="http://localhost:3000/top#">Ramanathapuram</a></div><div class="people"><a href="http://localhost:3000/top#">Ramgarh</a></div><div class="people"><a href="http://localhost:3000/top#">Rampur</a></div><div class="people"><a href="http://localhost:3000/top#">Ranaghat</a></div><div class="people"><a href="http://localhost:3000/top#">Ranaghat-Wb</a></div><div class="people"><a href="http://localhost:3000/top#">Ranchi</a></div><div class="people"><a href="http://localhost:3000/top#">Rangia</a></div><div class="people"><a href="http://localhost:3000/top#">Rangpo</a></div><div class="people"><a href="http://localhost:3000/top#">Ranibennur</a></div><div class="people"><a href="http://localhost:3000/top#">Raniganj</a></div><div class="people"><a href="http://localhost:3000/top#">Ratlam</a></div><div class="people"><a href="http://localhost:3000/top#">Ratnagiri</a></div><div class="people"><a href="http://localhost:3000/top#">Ravulapalem</a></div><div class="people"><a href="http://localhost:3000/top#">Rayachoty</a></div><div class="people"><a href="http://localhost:3000/top#">Rayagada</a></div><div class="people"><a href="http://localhost:3000/top#">Rewa</a></div><div class="people"><a href="http://localhost:3000/top#">Rewari</a></div><div class="people"><a href="http://localhost:3000/top#">Rishikesh</a></div><div class="people"><a href="http://localhost:3000/top#">Roha</a></div><div class="people"><a href="http://localhost:3000/top#">Rohtak</a></div><div class="people"><a href="http://localhost:3000/top#">Roorkee</a></div><div class="people"><a href="http://localhost:3000/top#">Ropar</a></div><div class="people"><a href="http://localhost:3000/top#">Rourkela</a></div><div class="people"><a href="http://localhost:3000/top#">Rudrapur</a></div><div class="people"><a href="http://localhost:3000/top#">Sagar</a></div><div class="people"><a href="http://localhost:3000/top#">Saharanpur</a></div><div class="people"><a href="http://localhost:3000/top#">Saharsa</a></div><div class="people"><a href="http://localhost:3000/top#">Salem</a></div><div class="people"><a href="http://localhost:3000/top#">Samastipur</a></div><div class="people"><a href="http://localhost:3000/top#">Sambalpur</a></div><div class="people"><a href="http://localhost:3000/top#">Sangamner</a></div><div class="people"><a href="http://localhost:3000/top#">Sangli</a></div><div class="people"><a href="http://localhost:3000/top#">Sangrur</a></div><div class="people"><a href="http://localhost:3000/top#">Sankarankoil</a></div><div class="people"><a href="http://localhost:3000/top#">Sankarankovil</a></div><div class="people"><a href="http://localhost:3000/top#">Santipur</a></div><div class="people"><a href="http://localhost:3000/top#">Saputara</a></div><div class="people"><a href="http://localhost:3000/top#">Sasaram</a></div><div class="people"><a href="http://localhost:3000/top#">Satara</a></div><div class="people"><a href="http://localhost:3000/top#">Satna</a></div><div class="people"><a href="http://localhost:3000/top#">Sawai-Madhopur</a></div><div class="people"><a href="http://localhost:3000/top#">Sawantwadi</a></div><div class="people"><a href="http://localhost:3000/top#">Sehore</a></div><div class="people"><a href="http://localhost:3000/top#">Shahdol</a></div><div class="people"><a href="http://localhost:3000/top#">Shahjahanpur</a></div><div class="people"><a href="http://localhost:3000/top#">Shamli</a></div><div class="people"><a href="http://localhost:3000/top#">Shikohabad</a></div><div class="people"><a href="http://localhost:3000/top#">Shillong</a></div><div class="people"><a href="http://localhost:3000/top#">Shimla</a></div><div class="people"><a href="http://localhost:3000/top#">Shirdi-City</a></div><div class="people"><a href="http://localhost:3000/top#">Shivamogga</a></div><div class="people"><a href="http://localhost:3000/top#">Shivpuri</a></div><div class="people"><a href="http://localhost:3000/top#">Shravasti</a></div><div class="people"><a href="http://localhost:3000/top#">Siddipet</a></div><div class="people"><a href="http://localhost:3000/top#">Sikar</a></div><div class="people"><a href="http://localhost:3000/top#">Silchar</a></div><div class="people"><a href="http://localhost:3000/top#">Siliguri</a></div><div class="people"><a href="http://localhost:3000/top#">Silvassa</a></div><div class="people"><a href="http://localhost:3000/top#">Sindhanur</a></div><div class="people"><a href="http://localhost:3000/top#">Singrauli</a></div><div class="people"><a href="http://localhost:3000/top#">Sirkali</a></div><div class="people"><a href="http://localhost:3000/top#">Sirsa</a></div><div class="people"><a href="http://localhost:3000/top#">Sirsi</a></div><div class="people"><a href="http://localhost:3000/top#">Sitamarhi</a></div><div class="people"><a href="http://localhost:3000/top#">Sitapur</a></div><div class="people"><a href="http://localhost:3000/top#">Sivakasi</a></div><div class="people"><a href="http://localhost:3000/top#">Sivasagar</a></div><div class="people"><a href="http://localhost:3000/top#">Siwan</a></div><div class="people"><a href="http://localhost:3000/top#">Solan</a></div><div class="people"><a href="http://localhost:3000/top#">Solapur</a></div><div class="people"><a href="http://localhost:3000/top#">Sonipat</a></div><div class="people"><a href="http://localhost:3000/top#">Sri-Ganganagar</a></div><div class="people"><a href="http://localhost:3000/top#">Srikakulam</a></div><div class="people"><a href="http://localhost:3000/top#">Srinagar</a></div><div class="people"><a href="http://localhost:3000/top#">Srivilliputhur</a></div><div class="people"><a href="http://localhost:3000/top#">Sullurpeta</a></div><div class="people"><a href="http://localhost:3000/top#">Sultanpur</a></div><div class="people"><a href="http://localhost:3000/top#">Sulthan-Bathery</a></div><div class="people"><a href="http://localhost:3000/top#">Sundernagar</a></div><div class="people"><a href="http://localhost:3000/top#">Surat</a></div><div class="people"><a href="http://localhost:3000/top#">Suratgarh</a></div><div class="people"><a href="http://localhost:3000/top#">Surendranagar-Dudhrej</a></div><div class="people"><a href="http://localhost:3000/top#">Suri</a></div><div class="people"><a href="http://localhost:3000/top#">Suryapet</a></div><div class="people"><a href="http://localhost:3000/top#">Tadepalligudem</a></div><div class="people"><a href="http://localhost:3000/top#">Tadpatri</a></div><div class="people"><a href="http://localhost:3000/top#">Taliparambu</a></div><div class="people"><a href="http://localhost:3000/top#">Tanuku</a></div><div class="people"><a href="http://localhost:3000/top#">Tarn-Taran-Sahib</a></div><div class="people"><a href="http://localhost:3000/top#">Tenkasi</a></div><div class="people"><a href="http://localhost:3000/top#">Tezpur</a></div><div class="people"><a href="http://localhost:3000/top#">Thalassery</a></div><div class="people"><a href="http://localhost:3000/top#">Thanjavur</a></div><div class="people"><a href="http://localhost:3000/top#">Theni</a></div><div class="people"><a href="http://localhost:3000/top#">Thiruvalla</a></div><div class="people"><a href="http://localhost:3000/top#">Thiruvallur</a></div><div class="people"><a href="http://localhost:3000/top#">Thiruvananthapuram</a></div><div class="people"><a href="http://localhost:3000/top#">Thiruvarur</a></div><div class="people"><a href="http://localhost:3000/top#">Thodupuzha</a></div><div class="people"><a href="http://localhost:3000/top#">Thoothukudi</a></div><div class="people"><a href="http://localhost:3000/top#">Thrissur</a></div><div class="people"><a href="http://localhost:3000/top#">Thuraiyur</a></div><div class="people"><a href="http://localhost:3000/top#">Thuraiyur-2</a></div><div class="people"><a href="http://localhost:3000/top#">Tindivanam</a></div><div class="people"><a href="http://localhost:3000/top#">Tinsukia</a></div><div class="people"><a href="http://localhost:3000/top#">Tiptur</a></div><div class="people"><a href="http://localhost:3000/top#">Tirunelveli</a></div><div class="people"><a href="http://localhost:3000/top#">Tirupati</a></div><div class="people"><a href="http://localhost:3000/top#">Tirupattur</a></div><div class="people"><a href="http://localhost:3000/top#">Tirupur</a></div><div class="people"><a href="http://localhost:3000/top#">Tiruttani</a></div><div class="people"><a href="http://localhost:3000/top#">Tiruvannamalai</a></div><div class="people"><a href="http://localhost:3000/top#">Tohana</a></div><div class="people"><a href="http://localhost:3000/top#">Trichy</a></div><div class="people"><a href="http://localhost:3000/top#">Tumakuru</a></div><div class="people"><a href="http://localhost:3000/top#">Tuni</a></div><div class="people"><a href="http://localhost:3000/top#">Udaipur</a></div><div class="people"><a href="http://localhost:3000/top#">Udgir</a></div><div class="people"><a href="http://localhost:3000/top#">Udhampur</a></div><div class="people"><a href="http://localhost:3000/top#">Udumalaipettai</a></div><div class="people"><a href="http://localhost:3000/top#">Ujjain</a></div><div class="people"><a href="http://localhost:3000/top#">Uluberia</a></div><div class="people"><a href="http://localhost:3000/top#">Una</a></div><div class="people"><a href="http://localhost:3000/top#">Unnao</a></div><div class="people"><a href="http://localhost:3000/top#">Vadodara</a></div><div class="people"><a href="http://localhost:3000/top#">Valsad</a></div><div class="people"><a href="http://localhost:3000/top#">Vapi</a></div><div class="people"><a href="http://localhost:3000/top#">Varanasi</a></div><div class="people"><a href="http://localhost:3000/top#">Varkala</a></div><div class="people"><a href="http://localhost:3000/top#">Vellore</a></div><div class="people"><a href="http://localhost:3000/top#">Veraval</a></div><div class="people"><a href="http://localhost:3000/top#">Vidisha</a></div><div class="people"><a href="http://localhost:3000/top#">Vijayawada</a></div><div class="people"><a href="http://localhost:3000/top#">Viluppuram</a></div><div class="people"><a href="http://localhost:3000/top#">Virudhachalam</a></div><div class="people"><a href="http://localhost:3000/top#">Virudhachalam-2</a></div><div class="people"><a href="http://localhost:3000/top#">Virudhunagar</a></div><div class="people"><a href="http://localhost:3000/top#">Vizag</a></div><div class="people"><a href="http://localhost:3000/top#">Vizianagaram</a></div><div class="people"><a href="http://localhost:3000/top#">Vyara</a></div><div class="people"><a href="http://localhost:3000/top#">Waidhan</a></div><div class="people"><a href="http://localhost:3000/top#">Warangal</a></div><div class="people"><a href="http://localhost:3000/top#">Wardha</a></div><div class="people"><a href="http://localhost:3000/top#">Washim</a></div><div class="people"><a href="http://localhost:3000/top#">Wayanad</a></div><div class="people"><a href="http://localhost:3000/top#">Yamuna-Nagar</a></div><div class="people"><a href="http://localhost:3000/top#">Yavatmal</a></div></div><div class="Foot"><img class="footerimg" src="./React App_files/Logo_f5xzza"><p>© 2023  Swiggy</p><div class="socialmedia"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="30" width="30" xmlns="http://www.w3.org/2000/svg"><desc></desc><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="30" width="30" xmlns="http://www.w3.org/2000/svg"><desc></desc><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="30" width="30" xmlns="http://www.w3.org/2000/svg"><desc></desc><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="8" y1="20" x2="12" y2="11"></line><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7"></path><circle cx="12" cy="12" r="9"></circle></svg><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="30" width="30" xmlns="http://www.w3.org/2000/svg"><desc></desc><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3"></circle><line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line></svg></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>

@@ -41,7 +41,7 @@ const Loginpg = () => {
 
           <div>
 
-            <button className='Part1div__FindButton'>Find Food </button>
+            <button className='Part1div__FindButton'>Find Food.</button>
           </div>
         </div>
 
