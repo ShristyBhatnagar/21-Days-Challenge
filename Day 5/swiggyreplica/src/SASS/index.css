@@ -13,7 +13,6 @@
   letter-spacing: 0;
   font-size: 16px;
   font-weight: 600;
-  height: 40px;
   line-height: 40px;
   width: auto;
   padding: 0 5rem;
@@ -35,34 +34,51 @@
   margin: 2rem;
 }
 
-.Part1div {
-  height: 390px;
-}
 .Part1div__FindButton {
-  color: white;
-  background-color: orange;
-  height: 50px;
-  width: 150px;
-  border: none;
-  font-weight: bolder;
+  color: #fff;
+  background-color: #fc8019;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  height: 60px;
+  line-height: 60px;
+  width: 140px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.53px;
 }
 .Part1div__LocationBar {
   margin-top: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  height: 58px !important;
-  line-height: 28px !important;
   padding-top: 0 !important;
   padding-left: 15px !important;
   padding-right: 160px !important;
   caret-color: #fc8019;
   font-size: 18px !important;
   font-weight: 500;
+  height: 100px;
 }
 .Part1div__Loco {
-  height: 50px;
-  width: 30%;
+  box-shadow: grey;
+  box-sizing: border-box;
+  border-radius: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 40%;
+  border-color: grey;
+  height: 60px;
+}
+.Part1div .ico {
+  margin-left: -100px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.Part1div .icospan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  line-height: 60px;
 }
 
 .intro {
@@ -71,11 +87,12 @@
   width: 50%;
   position: absolute;
   top: 0;
+  height: 95%;
 }
 
 .Part2div {
   color: white;
-  background-color: #2B1E16;
+  background-color: #2b1e16;
   width: 100%;
   height: 400px;
 }
@@ -117,7 +134,7 @@
 .Part3div {
   display: flex;
   flex-direction: row;
-  margin-top: -240px;
+  margin-top: -360px;
   margin-left: 400px;
 }
 
@@ -131,6 +148,7 @@
   flex-wrap: wrap;
   padding: 20px;
   justify-content: space-evenly;
+  border-bottom: 2px solid #fff;
 }
 .Part4div__listed {
   justify-content: center;
@@ -169,21 +187,14 @@
   justify-content: space-between;
 }
 
-.ico {
-  margin-left: -50px;
-  margin-top: 10px;
-  z-index: 1;
-}
-
 .PopularCity {
   padding: 20px;
   color: grey;
-  height: 150px;
   width: 50%;
 }
 
 .people {
-  padding: 20px;
+  padding: 10px;
 }
 
 .popcity {
@@ -239,4 +250,35 @@
 
 .dark {
   background-color: grey;
+}
+
+.h3tag {
+  font-size: 20px;
+  color: grey;
+}
+
+.h1tag {
+  margin-top: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+}
+
+.footerimg {
+  height: 50px;
+  width: 100px;
+  margin: 30px;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 20px;
+}
+
+.themechanger {
+  display: flex;
+  flex-direction: row;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }/*# sourceMappingURL=index.css.map */

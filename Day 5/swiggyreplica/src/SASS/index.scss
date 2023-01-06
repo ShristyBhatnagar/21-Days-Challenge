@@ -2,224 +2,205 @@
 // @tailwind components;
 // @tailwind utilities;
 
+$font1: larger;
+$marginleft: 50%;
+$darkcolor: #2b1e16;
+$display: flex;
 
-
-$font1:larger;
-$marginleft:50%;
-$darkcolor:#2B1E16;
-$display:flex;
-
-// *{
-//     margin: 0;
-// }
-.leftelem{
-    
+//given properties to left elements
+.leftelem {
     display: $display;
     flex-direction: row;
     justify-content: space-between;
-    width: 50%; 
-    
-    &__login{
+    width: 50%;
+
+    &__login {
         text-decoration: none;
         cursor: pointer;
         display: inline-block;
         text-align: center;
-    color: #000;
-    letter-spacing: 0;
-    font-size: 16px;
-    font-weight: 600;
-    height: 40px;
-    line-height: 40px;
-    width: auto;
-    padding: 0 5rem;
-    
-    
-}  
-    
-        
-        &__signup{
-            cursor: pointer;
-            display: inline-block;
-            text-align: center;
-            padding: 0 2rem;
-            letter-spacing: 0;
-            color: #fff;
-            background-color: #000;
-            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
-            font-size: 16px;
-            font-weight: 600;
-            height: 40px;
-            line-height: 40px;
-            width: auto;
-            margin: 2rem;
-            
-        }
+        color: #000;
+        letter-spacing: 0;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 40px;
+        width: auto;
+        padding: 0 5rem;
     }
-        
-    
-    
 
-
-
-
-
-.Part1div{
-    height: 390px;
-    &__FindButton{
-
-        color: white;
-        background-color: orange;
-        height: 50px;
-        width: 150px;
-        border: none;
-        font-weight: bolder;
-        // margin-top: -100px;
+    &__signup {
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        padding: 0 2rem;
+        letter-spacing: 0;
+        color: #fff;
+        background-color: #000;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+        font-size: 16px;
+        font-weight: 600;
+        height: 40px;
+        line-height: 40px;
+        width: auto;
+        margin: 2rem;
     }
-    &__LocationBar{
+}
+
+.Part1div {
+    &__FindButton {
+        color: #fff;
+        background-color: #fc8019;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+        // right: 0;
+        height: 60px;
+        line-height: 60px;
+        width: 140px;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.53px;
+    }
+    &__LocationBar {
         margin-top: 100px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        height: 58px!important;
-    line-height: 28px!important;
-    padding-top: 0!important;
-    padding-left: 15px!important;
-    padding-right: 160px!important;
-    caret-color: #fc8019;
-    font-size: 18px!important;
-    font-weight: 500;
+        padding-top: 0 !important;
+        padding-left: 15px !important;
+        padding-right: 160px !important;
+        caret-color: #fc8019;
+        font-size: 18px !important;
+        font-weight: 500;
+        height: 100px;
+    }
+    &__Loco {
+        box-shadow: grey;
+        box-sizing: border-box;
+        border-radius: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 40%;
+        border-color: grey;
+        height: 60px;
+    }
+    .ico {
+    
+       margin-left: -100px;
+       margin-top: 20px;
+        cursor: pointer;
         
-           
-        }
-        &__Loco{
-            height: 50px;
-           width: 30%;
-      
-           }
+    }
+    .icospan{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        line-height: 60px;
+    }
 }
 
-
-.intro{
+.intro {
     position: absolute;
     right: 0;
     width: 50%;
     position: absolute;
     top: 0;
-  
+    height: 95%;
 }
 
-
-   
-
-
-
-.Part2div{
+.Part2div {
     color: white;
     background-color: $darkcolor;
     width: 100%;
     height: 400px;
-    &__block{
-        
-         padding: 30px;
-         width: 300px;
-         height: 250px;
-         display: flex;
-         flex-direction: column;
- }  
-    &__subdiv{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-     padding-right: 20px;
- }
- 
-    
-    }
 
-    
-.Part3Container{
+    &__block {
+        padding: 30px;
+        width: 300px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__subdiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 20px;
+    }
+}
+
+.Part3Container {
     display: $display;
     flex-direction: column;
 
-
-
-    &__Part3content1{
+    &__Part3content1 {
         font-weight: bolder;
-       font-family:sans-serif;
-       width: 250px;
-       margin: 35px;
-       
-       
+        font-family: sans-serif;
+        width: 250px;
+        margin: 35px;
     }
-    &__Part3content2{
-        font-family:sans-serif;
-       width: 350px;
-       color: gray;
+    &__Part3content2 {
+        font-family: sans-serif;
+        width: 350px;
+        color: gray;
     }
 
-    &__icons{
+    &__icons {
         display: flex;
         flex-direction: row;
         padding: 20px;
     }
-  
 }
 
-
-
-.Part3div{
+.Part3div {
     display: flex;
     flex-direction: row;
-    margin-top: -240px;
+    margin-top: -360px;
     margin-left: 400px;
-    
- }
+}
 
- 
-
-
- .Part4div{
+.Part4div {
     background-color: black;
     height: 500px;
     width: 100%;
-     color: white;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     padding: 20px;
-     justify-content: space-evenly;
-     &__listed{
-       justify-content: center;
-     }
-     &__icons2{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #fff;
+
+    &__listed {
+        justify-content: center;
+    }
+    &__icons2 {
         position: absolute;
         right: 50px;
-         margin-top: -300px;
-     }
-     li{
+        margin-top: -300px;
+    }
+    li {
         padding: 10px;
-     }
-     &__icons{
+    }
+    &__icons {
         display: flex;
         flex-direction: row;
         margin: 10px;
-     }
- }
+    }
+}
 
-
-.Part5div{
+.Part5div {
     background-color: black;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
+
     height: 8000px;
-    
+
     width: 100%;
     color: white;
 }
-.Foot{
-    border-top: 2px solid silver ;
+.Foot {
+    border-top: 2px solid silver;
     background-color: black;
     height: 100px;
     color: white;
@@ -228,92 +209,97 @@ $display:flex;
     justify-content: space-between;
 }
 
-
-.ico{
-    
-     margin-left: -50px;
-      margin-top: 10px;
-      z-index: 1;
-}
-
-
-
-.PopularCity{
+.PopularCity {
     // display: flex;
     // flex-direction: column;
     padding: 20px;
     color: grey;
-    height: 150px;
+    // height: 150px;
     width: 50%;
 }
-.people{
-    padding: 20px;
-    
+.people {
+    padding: 10px;
 }
-.popcity{
-        
+.popcity {
     color: black;
     font-weight: bolder;
-
 }
 
-.popscreen{
+.popscreen {
     display: flex;
     flex-direction: row;
     padding: 30px;
-    justify-content:space-around ;
+    justify-content: space-around;
 
-    &__overlay{
+    &__overlay {
         height: 100%;
         width: 60%;
         background-color: grey;
-        opacity: .7;
-    overflow: hidden;
-    z-index: 10000;
-    position: absolute;
-    top:0;
-    left:0;
-        
+        opacity: 0.7;
+        overflow: hidden;
+        z-index: 10000;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
-    &__popup{
-    // z-index: 9999;
-   
-    height: 100%;
-    width: 40%;
-    position: absolute;
-    top:0;
-    right: 0;  
-    padding: 60px;
-    background-color: white;
-    
-
-   
+    &__popup {
+        height: 100%;
+        width: 40%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 60px;
+        background-color: white;
     }
-    &__Loco{
+    &__Loco {
         height: 50px;
         width: 80%;
         border: 2px solid orange;
-         padding: 20px;
-        
-        }
-
-   button{
-    color: white;
-    background-color: orange;
-    height: 50px;
-    width: 150px;
-    border: none;
-    font-weight: bolder;
-    margin: 10px;
-    // margin-top: -100px;
-}
-
-  
+        padding: 20px;
     }
-.light{
+
+    button {
+        color: white;
+        background-color: orange;
+        height: 50px;
+        width: 150px;
+        border: none;
+        font-weight: bolder;
+        margin: 10px;
+    }
+}
+.light {
     background-color: white;
 }
-.dark{
+.dark {
     background-color: grey;
 }
-    
+
+.h3tag {
+    font-size: 20px;
+    color: grey;
+}
+
+.h1tag {
+    margin-top: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+.footerimg {
+    height: 50px;
+    width: 100px;
+    margin: 30px;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 20px;
+}
+.themechanger {
+    display: flex;
+    flex-direction: row;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
