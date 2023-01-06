@@ -17,6 +17,6 @@ export const data = [
   },
   {
     id: 4,
-    text: "Unexpected Guests?",
+    text: "Unexpected Guests?.",
   },
 ];
