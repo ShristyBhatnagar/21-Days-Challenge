@@ -10,3 +10,21 @@
 .content{
     padding: 20px;
 }
+
+.Appointment{
+
+    height: 200px;
+    width: 400px;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20%;
+}
+.Admission{
+    height: 200px;
+    width: 400px;
+    background-color: azure;
+   
+    padding: 20%;
+}
